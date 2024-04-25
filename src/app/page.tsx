@@ -84,9 +84,11 @@ export default function Home() {
 
 
           <div className="z-[-1] absolute flex justify-center items-center size-full hero-gradient">
-            <span className="hero-gradient-1"></span>
-            <span className="hero-gradient-2"></span>
-            <span className="hero-gradient-3"></span>
+            <span className="size-[80rem] hero-gradient-1"></span>
+
+            <span className="-bottom-[6rem] left-[2rem] sm:-bottom-[6rem] sm:left-[2rem] md:-bottom-[15rem] md:-left-[15rem] lg:-bottom-[15rem] lg:-left-[15rem] xl:-bottom-[15rem] xl:-left-[15rem] size-[60rem]   hero-gradient-2"></span>
+
+            <span className="-bottom-[6rem] right-[2rem] sm:-bottom-[6rem] sm:right-[2rem] md:-bottom-[15rem] md:-right-[15rem] lg:-bottom-[15rem] lg:-right-[15rem] xl:-bottom-[15rem] xl:-right-[15rem] size-[60rem]   hero-gradient-3"></span>
           </div>
         </div>
       </div>
