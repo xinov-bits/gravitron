@@ -56,7 +56,7 @@ export default function Home() {
             <Button
               type="white"
               width="w-36"
-              height="h-10"
+              height="h-12"
               round="rounded-md"
               icon={true}
             >
@@ -66,7 +66,7 @@ export default function Home() {
             <Button
               type="white-outlined"
               width="w-36"
-              height="h-10"
+              height="h-12"
               round="rounded-md"
               icon={false}
             >

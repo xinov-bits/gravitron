@@ -52,7 +52,7 @@ const Solutions = () => {
     return (
         <>
             <div className="z-[10] bg-[--black-1000] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 justify-center items-start w-full h-full p-4 sm:p-4 md:p-8 lg:p-8 xl:p-8 gap-6 sm:gap-6 md:gap-8 lg:gap-8 xl:gap-8 overflow-hidden">
-                <Tilt className="!w-full sm:!w-full md:!w-1/2 lg:!w-1/2 xl:!w-1/2 !h-full"
+                <Tilt className="!size-full"
                     tiltMaxAngleX={2}
                     tiltMaxAngleY={2}
                     glareEnable={true}
@@ -61,7 +61,7 @@ const Solutions = () => {
                     glarePosition='all'
                     glareColor='#45b4ff'
                 >
-                    <div className="group block items-start w-full h-full bg-gradient-to-t from-[--black-800] to-[--black-600] border border-[--black-400] rounded-xl overflow-hidden cursor-pointer">
+                    <div className="group block items-start size-full bg-gradient-to-t from-[--black-800] to-[--black-600] border border-[--black-400] rounded-xl overflow-hidden cursor-pointer">
                         <div className="block items-start w-full h-auto p-6 sm:p-6 md:p-8 lg:p-8 xl:p-8">
                             <div className="flex justify-start items-center w-max px-2.5 py-2 space-x-1 leading-none text-sm text-[#45b4ff] border border-[#45b4ff] rounded-full select-none" id="sec2_chip1">
                                 <BoltIcon className="flex justify-center items-center size-3.5" />
@@ -130,8 +130,8 @@ const Solutions = () => {
                     </div>
                 </Tilt>
 
-                <div className="block justify-start items-center !w-full sm:!w-full md:!w-1/2 lg:!w-1/2 xl:!w-1/2 h-full space-y-6 sm:space-y-6 md:space-y-8 lg:space-y-8 xl:space-y-8">
-                    <Tilt className="!w-full !h-auto sm:!h-auto md:!h-1/2 lg:!h-1/2 xl:!h-1/2"
+                <div className="block justify-start items-center size-full space-y-6 sm:space-y-6 md:space-y-8 lg:space-y-8 xl:space-y-8">
+                    <Tilt className="!w-full !h-auto"
                         tiltMaxAngleX={2}
                         tiltMaxAngleY={2}
                         glareEnable={true}
@@ -191,7 +191,7 @@ const Solutions = () => {
                         </div>
                     </Tilt>
 
-                    <Tilt className="!w-full !h-auto sm:!h-auto md:!h-1/2 lg:!h-1/2 xl:!h-1/2"
+                    <Tilt className="!w-full !h-auto"
                         tiltMaxAngleX={2}
                         tiltMaxAngleY={2}
                         glareEnable={true}
