@@ -114,11 +114,9 @@ const Solutions = () => {
                                     let dupImgs = [...images];
 
                                     let removedItem = dupImgs.shift();
-                                    dupImgs.push(removedItem);
+                                    dupImgs.push(removedItem ? removedItem : '');
 
                                     setImages(dupImgs)
-
-                                    console.log(images)
                                 }}
                             >
                                 <Image className="flex justify-center items-center w-auto"
