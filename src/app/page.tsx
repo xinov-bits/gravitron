@@ -14,7 +14,7 @@ import WebServices from '@/components/layout/WebServices';
 export default function Home() {
 
   return (
-    <main className="block justify-center items-center w-full min-h-screen pt-10 sm:pt-10 md:pt-14 lg:pt-14 xl:pt-14 bg-none overflow-x-hidden">
+    <main className="block justify-center items-center w-full min-h-screen pt-20 sm:pt-20 md:pt-14 lg:pt-14 xl:pt-14 bg-none overflow-x-hidden">
       <div className="flex justify-center items-center w-full h-[37rem]" id="hero-section">
         <div className="flex flex-col justify-center items-center w-full h-auto text-white">
           <span className="z-[10] flex justify-center items-center w-auto text-center font-normal text-sm leading-none" id="hero-tagline">
