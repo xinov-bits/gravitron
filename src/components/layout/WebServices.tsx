@@ -1,12 +1,11 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 // NEXT JS
 import Image from 'next/image';
 
 // ICONS & CUSTOM COMPONENTS
-import { BoltIcon, PaintBrushIcon, SwatchIcon } from '@heroicons/react/16/solid';
 import Button from '@/components/segments/Button';
 
 

@@ -1,17 +1,9 @@
 "use client"
 
-import React, { useEffect, useState } from 'react';
-
-// NEXT JS
-import Link from 'next/link';
-import Image from 'next/image';
+import React from 'react';
 
 // ICONS & CUSTOM COMPONENTS
-import { BoltIcon, PaintBrushIcon, SwatchIcon } from '@heroicons/react/16/solid';
 import Button from '@/components/segments/Button';
-
-// TILT JS
-import Tilt from 'react-parallax-tilt';
 
 // COMPONENTS
 import Solutions from '@/components/layout/Solutions';
