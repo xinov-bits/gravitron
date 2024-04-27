@@ -7,7 +7,7 @@ import { ChevronRightIcon } from '@heroicons/react/20/solid';
 
 interface ButtonProps {
     children: React.ReactNode;
-    type: 'primary' | 'primary-outlined' | 'secondary' | 'secondary-outlined' | 'white' | 'white-outlined';
+    type: 'primary' | 'primary-outlined' | 'secondary' | 'secondary-outlined' | 'white' | 'white-basic' | 'white-outlined';
     width: string;
     height: string;
     round: string;
@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({ children, type, width, height, round, i
         <>
             {type === 'primary' && (
                 <button className={`
-                    select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-[--primary-400] hover:bg-[--primary-500] focus:bg-[--primary-300] ${round} text-white
+                    select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-gradient-to-b from-[--blue-300] to-[--blue-400] hover:bg-[--blue-400] focus:bg-[--blue-400] ${round} text-[--white-100] cBtn-blue
                 `}>
                     <div className={`${icon && 'mr-1'}`}> {children} </div>
 
@@ -92,6 +92,24 @@ const Button: React.FC<ButtonProps> = ({ children, type, width, height, round, i
             {type === 'white' && (
                 <button className={`
                     select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-gradient-to-b from-[--white-300] to-[--white-500] hover:bg-[--white-200] focus:bg-[--white-200] ${round} text-[--black-900] cBtn-white
+                `}>
+                    <div className={`${icon && 'mr-1'}`}> {children} </div>
+
+                    {icon && (
+                        <div className="relative flex justify-center items-center">
+                            <svg className="size-4 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+
+                            <span className="absolute flex justify-center items-center right-0.5 w-0 group-hover:w-2.5 h-[1.5px] origin-right opacity-0 group-hover:opacity-100 bg-[--black-900] rounded-full"></span>
+                        </div>
+                    )}
+                </button>
+            )}
+            
+            {type === 'white-basic' && (
+                <button className={`
+                    select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-gradient-to-b from-[--white-300] to-[--white-500] hover:bg-[--white-200] focus:bg-[--white-200] ${round} text-[--black-900] cBtn-white hover:!shadow-none
                 `}>
                     <div className={`${icon && 'mr-1'}`}> {children} </div>
 
