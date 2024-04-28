@@ -104,22 +104,22 @@ const WebServices = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 w-full h-full mt-8 sm:mt-8 md:mt-12 lg:mt-12 xl:mt-12 f-dmsans">
-                    {services.map((k, index) => (
+                    {services.map((service, index) => (
                         <div key={index} className="relative group block items-center w-full h-full sm:h-full md:h-[32rem] lg:h-[32rem] xl:h-[32rem] p-[1px] bg-[--black-500] rounded-md overflow-hidden cursor-pointer" id="ws-card" onMouseMove={handleMouseChange}>
                             <div className="z-[2] relative block items-center size-full p-0 sm:p-0 md:p-4 lg:p-4 xl:p-4 bg-[--black-1000] rounded-md overflow-hidden">
                                 <div className="block items-center w-full p-6">
                                     <div className="flex justify-start items-center w-full space-x-3">
-                                        <div className={`flex justify-center items-center size-8 ${k.icon[0]} rounded-full`}>
-                                            {k.icon[1]}
+                                        <div className={`flex justify-center items-center size-8 ${service.icon[0]} rounded-full`}>
+                                            {service.icon[1]}
                                         </div>
 
                                         <div className="flex justify-start items-center w-max text-xl sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl text-[--white-100] font-semibold">
-                                            {k.name}
+                                            {service.name}
                                         </div>
                                     </div>
 
                                     <div className="flex justify-start items-center w-full mt-2 text-sm sm:text-sm md:text-base lg:text-base xl:text-base text-[--fgColor-muted] font-normal">
-                                        {k.desc}
+                                        {service.desc}
                                     </div>
 
                                     <div className="flex justify-start items-center w-full mt-4 text-sm sm:text-sm md:text-base lg:text-base xl:text-base">
@@ -137,14 +137,14 @@ const WebServices = () => {
 
                                 <div className="relative flex justify-center items-center w-full h-auto">
                                     <Image className="z-[1] flex justify-center items-center w-auto rounded-t-none sm:rounded-t-none md:rounded-t-md lg:rounded-t-md xl:rounded-t-md rounded-b-md sm:rounded-b-md md:rounded-b-none lg:rounded-b-none xl:rounded-b-none rounded-md border border-[--black-200] curosr-pointer"
-                                        src={k.img}
+                                        src={service.img}
                                         width={1920}
                                         height={1080}
                                         alt=""
                                     />
 
                                     <Image className="top-0 absolute z-[0] flex justify-center items-center w-auto rounded-md scale-[1.01] blur-lg group-hover:blur-2xl group-hover:opacity-30 opacity-20 saturate-150"
-                                        src={k.img}
+                                        src={service.img}
                                         width={1920}
                                         height={1080}
                                         alt=""
