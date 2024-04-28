@@ -9,6 +9,8 @@ import Button from '@/components/segments/Button';
 import Solutions from '@/components/layout/Solutions';
 import Prototype from '@/components/layout/Prototype';
 import WebServices from '@/components/layout/WebServices';
+import Clients from '@/components/layout/Clients';
+import Marketing from '@/components/layout/Marketing';
 
 
 export default function Home() {
@@ -21,7 +23,7 @@ export default function Home() {
             ✦ Designing Your Digital Triumph
           </span>
 
-          <div className="z-[10] block items-center w-[95%] sm:w-[95%] md:w-[60%] lg:w-[60%] xl:w-[60%] mt-2 text-center font-extrabold text-[2rem] sm:text-[2rem] md:text-5xl lg:text-5xl xl:text-5xl leading-tight">
+          <div className="z-[10] block items-center w-[95%] sm:w-[95%] md:w-[60%] lg:w-[60%] xl:w-[60%] mt-2 text-center font-semibold text-[2rem] sm:text-[2rem] md:text-5xl lg:text-5xl xl:text-5xl leading-tight">
             <span className="gradient gradient-codespaces">Amplify</span> Your Brand: Bespoke Websites for Success
           </div>
 
@@ -91,6 +93,12 @@ export default function Home() {
       <Solutions />
 
       <WebServices />
+
+      <Clients />
+
+      <Marketing />
+
+      {/* <Domain /> */}
     </main>
   );
 }

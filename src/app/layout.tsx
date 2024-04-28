@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "500", "600", "700"] });
+const ibmPlexSas = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400", "500", "500", "600", "700"] });
 
 export const metadata: Metadata = {
   title: "Gravitron",
@@ -29,7 +29,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
       </head>
 
-      <body className={`${dmSans.className} bg-[--black-1000] overflow-x-hidden`}>
+      <body className={`${ibmPlexSas.className} bg-[--black-1000] overflow-x-hidden`}>
         <Header />
         <MbHeader />
 

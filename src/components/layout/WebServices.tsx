@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 // ICONS & CUSTOM COMPONENTS
 import Button from '@/components/segments/Button';
-import { ShoppingCartIcon } from '@heroicons/react/20/solid';
+import { BriefcaseIcon, BuildingOffice2Icon, BuildingStorefrontIcon, ChartBarIcon, NewspaperIcon, UsersIcon } from '@heroicons/react/24/outline';
 
 
 const WebServices = () => {
@@ -26,36 +26,42 @@ const WebServices = () => {
     // SERIVICES OBJ
     const services = [
         {
-            "name": "eCommerce Website",
+            "icon": ['bg-green-700', <BuildingStorefrontIcon className="size-4 text-white" />],
+            "name": "E-Commerce Website",
             "desc": "Build your own online store today, with expert guidance for a seamless journey to success.",
             "img": "/assets/website-types/target.png",
             "link": "/"
         },
         {
+            "icon": ['bg-fuchsia-700', <BuildingOffice2Icon className="size-4 text-white" />],
             "name": "Business Website",
             "desc": "Establish your digital presence with a professional website, guided by experts for success.",
             "img": "/assets/website-types/business.png",
             "link": "/"
         },
         {
+            "icon": ['bg-pink-700', <NewspaperIcon className="size-4 text-white" />],
             "name": "Blog Website",
             "desc": "Start your blogging journey today, with expert support for a seamless experience.",
             "img": "/assets/website-types/blog.png",
             "link": "/"
         },
         {
+            "icon": ['bg-violet-700', <BriefcaseIcon className="size-4 text-white" />],
             "name": "Portfolio Website",
             "desc": "Showcase your work with a stunning portfolio website, guided by experts for success.",
             "img": "/assets/website-types/portfolio.png",
             "link": "/"
         },
         {
+            "icon": ['bg-blue-700', <UsersIcon className="size-4 text-white" />],
             "name": "CRM Software",
             "desc": "Streamline your business operations with customized CRM software, guided by expert assistance.",
             "img": "/assets/website-types/crm.png",
             "link": "/"
         },
         {
+            "icon": ['bg-orange-700', <ChartBarIcon className="size-4 text-white" />],
             "name": "Dashboard",
             "desc": "Access insightful data and manage your online presence effectively, guided by expert assistance.",
             "img": "/assets/website-types/dashboard.png",
@@ -66,7 +72,7 @@ const WebServices = () => {
 
     return (
         <>
-            <div className="relative z-[10] bg-gradient-to-b from-[--black-1000] to-[--black-1100] flex flex-col items-center justify-start w-full min-h-screen my-4 sm:my-4 md:my-10 lg:my-10 xl:my-10 p-4 sm:p-4 md:p-8 lg:p-8 xl:p-8 overflow-hidden">
+            <div className="relative z-[10] bg-gradient-to-b from-[--black-1000] to-[--black-1100] flex flex-col items-center justify-start w-full min-h-screen mt-4 sm:mt-4 md:mt-10 lg:mt-10 xl:mt-10 p-4 sm:p-4 md:p-8 lg:p-8 xl:p-8 overflow-hidden">
                 <div className="flex flex-col justify-center items-center w-full text-center f-dmsans">
                     <h1 className="flex justify-center items-center w-[95%] sm:w-[95%] md:w-[50%] lg:w-[50%] xl:w-[50%] text-[--white-200] text-3xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-6xl font-bold">
                         A platform designed for growth
@@ -97,21 +103,27 @@ const WebServices = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 w-full h-full mt-8 sm:mt-8 md:mt-12 lg:mt-12 xl:mt-12 f-dmsans">
                     {services.map((k, index) => (
-                        <div className="relative group block items-center w-full h-[32rem] p-[1px] bg-[--black-600] rounded-md overflow-hidden cursor-pointer" id="ws-card" onMouseMove={handleMouseChange}>
-                            <div className="z-[2] relative block items-center size-full p-4 bg-[--black-1000] rounded-md overflow-hidden">
+                        <div className="relative group block items-center w-full h-full sm:h-full md:h-[32rem] lg:h-[32rem] xl:h-[32rem] p-[1px] bg-[--black-500] rounded-md overflow-hidden cursor-pointer" id="ws-card" onMouseMove={handleMouseChange}>
+                            <div className="z-[2] relative block items-center size-full p-0 sm:p-0 md:p-4 lg:p-4 xl:p-4 bg-[--black-1000] rounded-md overflow-hidden">
                                 <div className="block items-center w-full p-6">
-                                    <div className="flex justify-start items-center w-full text-3xl text-[--white-100] font-semibold">
-                                        {k.name}
+                                    <div className="flex justify-start items-center w-full space-x-3">
+                                        <div className={`flex justify-center items-center size-8 ${k.icon[0]} rounded-full`}>
+                                            {k.icon[1]}
+                                        </div>
+
+                                        <div className="flex justify-start items-center w-max text-xl sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl text-[--white-100] font-semibold">
+                                            {k.name}
+                                        </div>
                                     </div>
 
-                                    <div className="flex justify-start items-center w-full mt-2 text-base text-[--fgColor-muted] font-normal">
+                                    <div className="flex justify-start items-center w-full mt-2 text-sm sm:text-sm md:text-base lg:text-base xl:text-base text-[--fgColor-muted] font-normal">
                                         {k.desc}
                                     </div>
 
-                                    <div className="flex justify-start items-center w-full mt-4 text-base text-[--fgColor-muted] font-normal">
+                                    <div className="flex justify-start items-center w-full mt-4 text-sm sm:text-sm md:text-base lg:text-base xl:text-base">
                                         <Button
                                             type="white-outlined"
-                                            width="w-36"
+                                            width="w-32 sm:w-32 md:w-36 lg:w-36 xl:w-36"
                                             height="h-10"
                                             round="rounded-md"
                                             icon={true}
@@ -121,15 +133,15 @@ const WebServices = () => {
                                     </div>
                                 </div>
 
-                                <div className="relative flex justify-center items-center w-full h-full">
-                                    <Image className="top-4 absolute z-[1] flex justify-center items-center w-auto rounded-md border border-[--black-200] curosr-pointer"
+                                <div className="relative flex justify-center items-center w-full h-auto">
+                                    <Image className="z-[1] flex justify-center items-center w-auto rounded-t-none sm:rounded-t-none md:rounded-t-md lg:rounded-t-md xl:rounded-t-md rounded-b-md sm:rounded-b-md md:rounded-b-none lg:rounded-b-none xl:rounded-b-none rounded-md border border-[--black-200] curosr-pointer"
                                         src={k.img}
                                         width={1920}
                                         height={1080}
                                         alt=""
                                     />
 
-                                    <Image className="top-4 absolute z-[0] flex justify-center items-center w-auto rounded-md scale-[1.01] blur-xl group-hover:blur-2xl group-hover:opacity-25 opacity-20"
+                                    <Image className="top-0 absolute z-[0] flex justify-center items-center w-auto rounded-md scale-[1.01] blur-lg group-hover:blur-2xl group-hover:opacity-30 opacity-20 saturate-150"
                                         src={k.img}
                                         width={1920}
                                         height={1080}
