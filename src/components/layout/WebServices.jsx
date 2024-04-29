@@ -105,7 +105,7 @@ const WebServices = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 w-full h-full mt-8 sm:mt-8 md:mt-12 lg:mt-12 xl:mt-12 f-dmsans">
                     {services.map((service, index) => (
-                        <div key={service.name} suppressKeyWarning className="relative group block items-center w-full h-full sm:h-full md:h-[32rem] lg:h-[32rem] xl:h-[32rem] p-[1px] bg-[--black-500] rounded-md overflow-hidden cursor-pointer" id="ws-card" onMouseMove={handleMouseChange}>
+                        <div key={index} suppressKeyWarning className="relative group block items-center w-full h-full sm:h-full md:h-[32rem] lg:h-[32rem] xl:h-[32rem] p-[1px] bg-[--black-500] rounded-md overflow-hidden cursor-pointer" id="ws-card" onMouseMove={handleMouseChange}>
                             <div className="z-[2] relative block items-center size-full p-0 sm:p-0 md:p-4 lg:p-4 xl:p-4 bg-[--black-1000] rounded-md overflow-hidden">
                                 <div className="block items-center w-full p-6">
                                     <div className="flex justify-start items-center w-full space-x-3">
