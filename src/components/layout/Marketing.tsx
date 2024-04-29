@@ -15,7 +15,7 @@ const Marketing = () => {
     return (
         <>
             <div className="flex justify-center items-center w-full h-auto sm:h-auto md:h-[40rem] lg:h-[40rem] xl:h-[40rem] py-12 sm:py-12 md:py-16 lg:py-16 xl:py-16 bg-[--black-1100] text-[--white-100] f-dmsans">
-                <div className="block sm:block md:flex lg:flex xl:flex items-center size-full border-y border-t-[--black-900] border-b-[--black-1000] overflow-hidden">
+                <div className="block sm:block md:flex lg:flex xl:flex items-center size-full border-y border-[--black-600] overflow-hidden">
                     <div className="flex flex-col justify-center items-start w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 h-auto sm:h-auto md:h-full lg:h-full xl:h-full p-6 sm:p-6 md:p-14 lg:p-14 xl:p-14 bg-[--black-1100]">
                         <div className="items-center text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-extrabold">
                             Directing Traffic to Convert <span className="gradient gradient-blue">Harmoniously</span>
@@ -56,7 +56,7 @@ const Marketing = () => {
                         </div>
                     </div>
 
-                    <div className="flex justify-center items-center w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 h-auto sm:h-auto md:h-full lg:h-full xl:h-full py-5 sm:py-5 md:py-0 lg:py-0 xl:py-0 bg-gradient-to-t from-[--black-1100] to-[--black-900]">
+                    <div className="flex justify-center items-center w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 h-auto sm:h-auto md:h-full lg:h-full xl:h-full mt-6 sm:mt-6 md:mt-0 lg:mt-0 xl:mt-0 py-5 sm:py-5 md:py-0 lg:py-0 xl:py-0 bg-gradient-to-t from-[--black-1100] to-[--black-900]">
                         <Image className="flex justify-center items-center w-[20rem] h-full"
                             src="/assets/background/marketing/instagram-post.png"
                             width={1080}
