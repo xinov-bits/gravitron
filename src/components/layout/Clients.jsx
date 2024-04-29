@@ -44,7 +44,7 @@ const Clients = () => {
                             },
                             arrows: false,
                             pagination: false,
-                            perPage: window?.innerWidth <= 600 ? (window?.innerWidth <= 400 ? 3.5 : 5) : 7,
+                            perPage: window !== undefined ? (window?.innerWidth <= 600 ? (window?.innerWidth <= 400 ? 3.5 : 5) : 7) : 7,
                             gap: "20px",
                         }}
                         extensions={{ AutoScroll }}
