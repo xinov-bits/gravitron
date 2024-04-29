@@ -74,7 +74,7 @@ const WebServices = () => {
 
     return (
         <>
-            <div className="relative z-[10] bg-gradient-to-b from-[--black-1000] to-[--black-1100] flex flex-col items-center justify-start w-full min-h-screen mt-4 sm:mt-4 md:mt-10 lg:mt-10 xl:mt-10 p-4 sm:p-4 md:p-8 lg:p-8 xl:p-8 overflow-hidden">
+            {/* <div className="relative z-[10] bg-gradient-to-b from-[--black-1000] to-[--black-1100] flex flex-col items-center justify-start w-full min-h-screen mt-4 sm:mt-4 md:mt-10 lg:mt-10 xl:mt-10 p-4 sm:p-4 md:p-8 lg:p-8 xl:p-8 overflow-hidden">
                 <div className="flex flex-col justify-center items-center w-full text-center f-dmsans">
                     <h1 className="flex justify-center items-center w-[95%] sm:w-[95%] md:w-[50%] lg:w-[50%] xl:w-[50%] text-[--white-200] text-3xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-6xl font-bold">
                         A platform designed for growth
@@ -104,7 +104,7 @@ const WebServices = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 w-full h-full mt-8 sm:mt-8 md:mt-12 lg:mt-12 xl:mt-12 f-dmsans">
-                    {/* {services.map((service, index) => (
+                    {services.map((service, index) => (
                         <div key={index} suppressKeyWarning className="relative group block items-center w-full h-full sm:h-full md:h-[32rem] lg:h-[32rem] xl:h-[32rem] p-[1px] bg-[--black-500] rounded-md overflow-hidden cursor-pointer" id="ws-card" onMouseMove={handleMouseChange}>
                             <div className="z-[2] relative block items-center size-full p-0 sm:p-0 md:p-4 lg:p-4 xl:p-4 bg-[--black-1000] rounded-md overflow-hidden">
                                 <div className="block items-center w-full p-6">
@@ -152,9 +152,9 @@ const WebServices = () => {
                                 </div>
                             </div>
                         </div>
-                    ))} */}
+                    ))}
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
