@@ -26,55 +26,55 @@ const WebServices = () => {
 
 
     // SERIVICES OBJ
-    // const services = [
-    //     {
-    //         "icon": ['bg-green-700', <BuildingStorefrontIcon className="size-4 text-white" />],
-    //         "name": "E-Commerce Website",
-    //         "desc": "Build your own online store today, with expert guidance for a seamless journey to success.",
-    //         "img": "/assets/website-types/target.png",
-    //         "link": "/"
-    //     },
-    //     {
-    //         "icon": ['bg-fuchsia-700', <BuildingOffice2Icon className="size-4 text-white" />],
-    //         "name": "Business Website",
-    //         "desc": "Establish your digital presence with a professional website, guided by experts for success.",
-    //         "img": "/assets/website-types/business.png",
-    //         "link": "/"
-    //     },
-    //     {
-    //         "icon": ['bg-pink-700', <NewspaperIcon className="size-4 text-white" />],
-    //         "name": "Blog Website",
-    //         "desc": "Start your blogging journey today, with expert support for a seamless experience.",
-    //         "img": "/assets/website-types/blog.png",
-    //         "link": "/"
-    //     },
-    //     {
-    //         "icon": ['bg-violet-700', <BriefcaseIcon className="size-4 text-white" />],
-    //         "name": "Portfolio Website",
-    //         "desc": "Showcase your work with a stunning portfolio website, guided by experts for success.",
-    //         "img": "/assets/website-types/portfolio.png",
-    //         "link": "/"
-    //     },
-    //     {
-    //         "icon": ['bg-blue-700', <UsersIcon className="size-4 text-white" />],
-    //         "name": "CRM Software",
-    //         "desc": "Streamline your business operations with customized CRM software, guided by expert assistance.",
-    //         "img": "/assets/website-types/crm.png",
-    //         "link": "/"
-    //     },
-    //     {
-    //         "icon": ['bg-orange-700', <ChartBarIcon className="size-4 text-white" />],
-    //         "name": "Dashboard",
-    //         "desc": "Access insightful data and manage your online presence effectively, guided by expert assistance.",
-    //         "img": "/assets/website-types/dashboard.png",
-    //         "link": "/"
-    //     }
-    // ]
+    const services = [
+        {
+            "icon": ['bg-green-700', <BuildingStorefrontIcon key={'BuildingStorefrontIcon'} className="size-4 text-white" />],
+            "name": "E-Commerce Website",
+            "desc": "Build your own online store today, with expert guidance for a seamless journey to success.",
+            "img": "/assets/website-types/target.png",
+            "link": "/"
+        },
+        {
+            "icon": ['bg-fuchsia-700', <BuildingOffice2Icon key={'BuildingOffice2Icon'} className="size-4 text-white" />],
+            "name": "Business Website",
+            "desc": "Establish your digital presence with a professional website, guided by experts for success.",
+            "img": "/assets/website-types/business.png",
+            "link": "/"
+        },
+        {
+            "icon": ['bg-pink-700', <NewspaperIcon key={'NewspaperIcon'} className="size-4 text-white" />],
+            "name": "Blog Website",
+            "desc": "Start your blogging journey today, with expert support for a seamless experience.",
+            "img": "/assets/website-types/blog.png",
+            "link": "/"
+        },
+        {
+            "icon": ['bg-violet-700', <BriefcaseIcon key={'BriefcaseIcon'} className="size-4 text-white" />],
+            "name": "Portfolio Website",
+            "desc": "Showcase your work with a stunning portfolio website, guided by experts for success.",
+            "img": "/assets/website-types/portfolio.png",
+            "link": "/"
+        },
+        {
+            "icon": ['bg-blue-700', <UsersIcon key={'UsersIcon'} className="size-4 text-white" />],
+            "name": "CRM Software",
+            "desc": "Streamline your business operations with customized CRM software, guided by expert assistance.",
+            "img": "/assets/website-types/crm.png",
+            "link": "/"
+        },
+        {
+            "icon": ['bg-orange-700', <ChartBarIcon key={'ChartBarIcon'} className="size-4 text-white" />],
+            "name": "Dashboard",
+            "desc": "Access insightful data and manage your online presence effectively, guided by expert assistance.",
+            "img": "/assets/website-types/dashboard.png",
+            "link": "/"
+        }
+    ]
 
 
     return (
         <>
-            {/* <div className="relative z-[10] bg-gradient-to-b from-[--black-1000] to-[--black-1100] flex flex-col items-center justify-start w-full min-h-screen mt-4 sm:mt-4 md:mt-10 lg:mt-10 xl:mt-10 p-4 sm:p-4 md:p-8 lg:p-8 xl:p-8 overflow-hidden">
+            <div className="relative z-[10] bg-gradient-to-b from-[--black-1000] to-[--black-1100] flex flex-col items-center justify-start w-full min-h-screen mt-4 sm:mt-4 md:mt-10 lg:mt-10 xl:mt-10 p-4 sm:p-4 md:p-8 lg:p-8 xl:p-8 overflow-hidden">
                 <div className="flex flex-col justify-center items-center w-full text-center f-dmsans">
                     <h1 className="flex justify-center items-center w-[95%] sm:w-[95%] md:w-[50%] lg:w-[50%] xl:w-[50%] text-[--white-200] text-3xl sm:text-3xl md:text-6xl lg:text-6xl xl:text-6xl font-bold">
                         A platform designed for growth
@@ -154,7 +154,7 @@ const WebServices = () => {
                         </div>
                     ))}
                 </div>
-            </div> */}
+            </div>
         </>
     )
 }
