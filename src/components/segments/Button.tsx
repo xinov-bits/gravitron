@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({ children, type, width, height, round, i
         <>
             {type === 'primary' && (
                 <button className={`
-                    select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-gradient-to-b from-[--blue-300] to-[--blue-400] hover:bg-[--blue-400] focus:bg-[--blue-400] ${round} text-[--white-100] cBtn-blue
+                    z-[1] select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-gradient-to-b from-[--blue-300] to-[--blue-400] hover:bg-[--blue-400] focus:bg-[--blue-400] ${round} text-[--white-100] cBtn-blue
                 `}>
                     <div className={`${icon && 'mr-1'}`}> {children} </div>
 
@@ -37,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({ children, type, width, height, round, i
 
             {type === 'primary-outlined' && (
                 <button className={`
-                    select-none group flex justify-center items-center ${width} ${height} min-w-12 min-h-8 bg-none border-[1.5px] border-[--primary-400] hover:border-[--primary-500] focus:border-[--primary-300] text-[--primary-400] hover:text-[--primary-500] focus:text-[--primary-300] ${round} text-white backdrop-blur-[2px]
+                    z-[1] select-none group flex justify-center items-center ${width} ${height} min-w-12 min-h-8 bg-none border-[1.5px] border-[--primary-400] hover:border-[--primary-500] focus:border-[--primary-300] text-[--primary-400] hover:text-[--primary-500] focus:text-[--primary-300] ${round} text-white backdrop-blur-[2px]
                 `}>
                     <div className={`${icon && 'mr-1'}`}> {children} </div>
 
@@ -55,7 +55,7 @@ const Button: React.FC<ButtonProps> = ({ children, type, width, height, round, i
 
             {type === 'secondary' && (
                 <button className={`
-                    select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-[--secondary-400] hover:bg-[--secondary-500] focus:bg-[--secondary-300] ${round} text-white
+                    z-[1] select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-[--secondary-400] hover:bg-[--secondary-500] focus:bg-[--secondary-300] ${round} text-white
                 `}>
                     <div className={`${icon && 'mr-1'}`}> {children} </div>
 
@@ -73,7 +73,7 @@ const Button: React.FC<ButtonProps> = ({ children, type, width, height, round, i
 
             {type === 'secondary-outlined' && (
                 <button className={`
-                    select-none group flex justify-center items-center ${width} ${height} min-w-12 min-h-8 bg-none border-[1.5px] border-[--secondary-400] hover:border-[--secondary-500] focus:border-[--secondary-300] text-[--secondary-400] hover:text-[--secondary-500] focus:text-[--secondary-300] ${round} text-white backdrop-blur-[2px]
+                    z-[1] select-none group flex justify-center items-center ${width} ${height} min-w-12 min-h-8 bg-none border-[1.5px] border-[--secondary-400] hover:border-[--secondary-500] focus:border-[--secondary-300] text-[--secondary-400] hover:text-[--secondary-500] focus:text-[--secondary-300] ${round} text-white backdrop-blur-[2px]
                 `}>
                     <div className={`${icon && 'mr-1'}`}> {children} </div>
 
@@ -91,7 +91,7 @@ const Button: React.FC<ButtonProps> = ({ children, type, width, height, round, i
 
             {type === 'white' && (
                 <button className={`
-                    select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-gradient-to-b from-[--white-300] to-[--white-500] hover:bg-[--white-200] focus:bg-[--white-200] ${round} text-[--black-900] cBtn-white
+                    z-[1] select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-gradient-to-b from-[--white-300] to-[--white-500] hover:bg-[--white-200] focus:bg-[--white-200] ${round} text-[--black-900] cBtn-white
                 `}>
                     <div className={`${icon && 'mr-1'}`}> {children} </div>
 
@@ -109,7 +109,7 @@ const Button: React.FC<ButtonProps> = ({ children, type, width, height, round, i
             
             {type === 'white-basic' && (
                 <button className={`
-                    select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-gradient-to-b from-[--white-300] to-[--white-500] hover:bg-[--white-200] focus:bg-[--white-200] ${round} text-[--black-900] cBtn-white hover:!shadow-none
+                    z-[1] select-none group flex justify-center items-center ${width} ${height} min-w-16 min-h-10 bg-gradient-to-b from-[--white-300] to-[--white-500] hover:bg-[--white-200] focus:bg-[--white-200] ${round} text-[--black-900] cBtn-white hover:!shadow-none
                 `}>
                     <div className={`${icon && 'mr-1'}`}> {children} </div>
 
@@ -127,7 +127,7 @@ const Button: React.FC<ButtonProps> = ({ children, type, width, height, round, i
 
             {type === 'white-outlined' && (
                 <button className={`
-                    select-none group flex justify-center items-center ${width} ${height} min-w-12 min-h-8 bg-none border-[1.5px] border-[--white-100] hover:border-[--white-200] focus:border-[--white-200] text-[--white-100] hover:text-[--white-200] focus:text-[--white-200] ${round} text-white hover:opacity-75 backdrop-blur-[8px]
+                    z-[1] select-none group flex justify-center items-center ${width} ${height} min-w-12 min-h-8 bg-none border-[1.5px] border-[--white-100] hover:border-[--white-200] focus:border-[--white-200] text-[--white-100] hover:text-[--white-200] focus:text-[--white-200] ${round} text-white hover:opacity-75 backdrop-blur-[8px]
                 `}>
                     <div className={`${icon && 'mr-1'}`}> {children} </div>
 

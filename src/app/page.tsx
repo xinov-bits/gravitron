@@ -11,6 +11,7 @@ import Prototype from '@/components/layout/Prototype';
 import WebServices from '@/components/layout/WebServices';
 import Clients from '@/components/layout/Clients';
 import Marketing from '@/components/layout/Marketing';
+import Branding from '@/components/layout/Branding';
 
 
 export default function Home() {
@@ -98,7 +99,7 @@ export default function Home() {
 
       <Marketing />
 
-      {/* <Domain /> */}
+      <Branding />
     </main>
   );
 }

@@ -74,7 +74,7 @@ const WebServices = () => {
         <>
             <div className="relative z-[10] bg-gradient-to-b from-[--black-1000] to-[--black-1100] flex flex-col items-center justify-start w-full min-h-screen mt-4 sm:mt-4 md:mt-10 lg:mt-10 xl:mt-10 p-4 sm:p-4 md:p-8 lg:p-8 xl:p-8 overflow-hidden">
                 <div className="flex flex-col justify-center items-center w-full text-center f-dmsans">
-                    <h1 className="flex justify-center items-center w-[95%] sm:w-[95%] md:w-[50%] lg:w-[50%] xl:w-[50%] text-[--white-200] text-4xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-6xl font-bold">
+                    <h1 className="flex justify-center items-center w-[95%] sm:w-[95%] md:w-[60%] lg:w-[60%] xl:w-[60%] text-[--white-200] text-4xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-6xl font-bold">
                         Creative power that goes beyond templates
                     </h1>
 
