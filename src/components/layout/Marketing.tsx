@@ -19,7 +19,7 @@ const Marketing = () => {
                     <div className="flex justify-center items-center w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 h-auto sm:h-auto md:h-full lg:h-full xl:h-full bg-[--black-1100]">
                         <div className="flex flex-col justify-center items-center w-full p-6 sm:p-6 md:p-14 lg:p-14 xl:p-14">
                             <div className="items-center text-4xl sm:text-4xl md:text-[2.65rem] lg:text-[2.65rem] xl:text-[2.65rem] !leading-[1] font-extrabold">
-                                <span className="gradient gradient-blue">Elevate</span> Your Business&amp;s Market Presence
+                                <span className="gradient gradient-blue">Elevate</span> Your Business&apos;s Market Presence
                             </div>
 
                             <div className="flex justify-start items-center w-full mt-4 text-base sm:text-base md:text-lg lg:text-lg xl:text-lg text-[--white-400]">
