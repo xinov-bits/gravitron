@@ -29,9 +29,9 @@ const Clients = () => {
 
     return (
         <>
-            <div className="flex justify-center items-center w-full h-full bg-[--black-1100]">
-                <div className="flex justify-center items-center w-screen h-16 mt-10 bg-[--black-1100] text-[--white-100] !cursor-pointer">
-                    <Splide className="hidden sm:hidden md:flex lg:flex xl:flex justify-center items-center !size-full !cursor-pointer overflow-hidden"
+            <div className="z-[10] flex justify-center items-center w-full h-full bg-[--black-1100]">
+                <div className="z-[10] flex justify-center items-center w-screen h-36 bg-[--black-1100] text-[--white-100] !cursor-pointer">
+                    <Splide className="hidden sm:hidden md:flex lg:flex xl:flex justify-center items-center !w-full !h-16 !cursor-pointer overflow-hidden"
                         options={{
                             type: 'loop',
                             drag: false,
@@ -61,7 +61,7 @@ const Clients = () => {
                         ))}
                     </Splide>
 
-                    <Splide className="flex sm:flex md:hidden lg:hidden xl:hidden justify-center items-center !size-full !cursor-pointer overflow-hidden"
+                    <Splide className="flex sm:flex md:hidden lg:hidden xl:hidden justify-center items-center !w-full !h-16 !cursor-pointer overflow-hidden"
                         options={{
                             type: 'loop',
                             drag: false,

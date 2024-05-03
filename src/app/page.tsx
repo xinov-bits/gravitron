@@ -17,18 +17,18 @@ import Branding from '@/components/layout/Branding';
 export default function Home() {
 
   return (
-    <main className="block justify-center items-center w-full min-h-screen pt-20 sm:pt-20 md:pt-14 lg:pt-14 xl:pt-14 bg-none overflow-x-hidden">
+    <main className="z-[100] block justify-center items-center w-full min-h-screen pt-20 sm:pt-20 md:pt-14 lg:pt-14 xl:pt-14 bg-none overflow-x-hidden">
       <div className="flex justify-center items-center w-full h-[37rem]" id="hero-section">
-        <div className="flex flex-col justify-center items-center w-full h-auto text-white">
+        <div className="z-[10] flex flex-col justify-center items-center w-full h-full text-white bg-[--black-1000]">
           <span className="z-[10] flex justify-center items-center w-auto text-center font-normal text-sm leading-none" id="hero-tagline">
             ✦ Designing Your Digital Triumph
           </span>
 
-          <div className="z-[10] block items-center w-[95%] sm:w-[95%] md:w-[60%] lg:w-[60%] xl:w-[60%] mt-2 text-center font-semibold text-[2rem] sm:text-[2rem] md:text-5xl lg:text-5xl xl:text-5xl leading-tight">
+          <div className="z-[10] block items-center w-[95%] sm:w-[95%] md:w-[80%] lg:w-[80%] xl:w-[80%] mt-2 text-center font-bold text-[2rem] sm:text-[2rem] md:text-6xl lg:text-6xl xl:text-6xl leading-tight f-dmsans">
             <span className="gradient gradient-codespaces">Amplify</span> Your Brand: Bespoke Websites for Success
           </div>
 
-          <div className="z-[10] flex justify-center items-center w-[94%] sm:w-[94%] md:w-[56%] lg:w-[56%] xl:w-[56%] mt-4 text-base text-center text-[--fgColor-muted-100]">
+          <div className="z-[10] flex justify-center items-center w-[94%] sm:w-[94%] md:w-[60%] lg:w-[60%] xl:w-[60%] mt-4 text-lg text-center text-[--white-500]">
             Unleash the full spectrum of your digital potential through meticulously tailored websites, engineered to elevate and fortify your brand&apos;s online presence.
           </div>
 
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
 
 
-          <div className="z-[-1] absolute flex justify-center items-center size-full hero-gradient">
+          <div className="z-[2] absolute flex justify-center items-center size-full hero-gradient">
             <span className="size-[80rem] hero-gradient-1"></span>
 
             <span className="-bottom-[6rem] left-[2rem] sm:-bottom-[6rem] sm:left-[2rem] md:-bottom-[15rem] md:-left-[15rem] lg:-bottom-[15rem] lg:-left-[15rem] xl:-bottom-[15rem] xl:-left-[15rem] size-[60rem]   hero-gradient-2"></span>

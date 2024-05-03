@@ -67,9 +67,11 @@
   --white-800: #bec4cb;
   --white-900: #b5bbc2;
   --white-1000: #adb2b8;
+  --white-1000: #9da3aa;
 
   --fgColor-muted-100: #bcc6d1;
   --fgColor-muted: #848d97;
+  --fgColor-muted-300: #898989;
 
   --sub-nav-mktg-shadow: 0 0 0 1px rgba(53, 72, 91, 0.14),
     0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 7px rgba(0, 0, 0, 0.03);
@@ -96,6 +98,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+img {
+  user-select: none;
 }
 
 /* FONTS */
@@ -173,41 +179,41 @@ body {
 /* HERO SECTION */
 #hero-section {
   position: relative;
-  /* overflow: hidden; */
+  background-color: var(--black-1000);
 }
 #hero-section::after {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   height: 200%;
   background: url('data:image/svg+xml,<svg class="frame-4" width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H64V64H0V0Z" fill="white" fill-opacity="0.2" /><path d="M320 0H384V64H320V0Z" fill="white" fill-opacity="0.2" /><path d="M384 128H448V192H384V128Z" fill="white" fill-opacity="0.2" /><path d="M64 384H128V448H64V384Z" fill="white" fill-opacity="0.2" /><path d="M192 256H256V320H192V256Z" fill="white" fill-opacity="0.2" /><path d="M128 64H192V128H128V64Z" fill="white" fill-opacity="0.2" /><path d="M320 384H384V448H320V384Z" fill="white" fill-opacity="0.2" /><path d="M0 192H64V256H0V192Z" fill="white" fill-opacity="0.2" /><path d="M448 320H512V384H448V320Z" fill="white" fill-opacity="0.2" /><path d="M64 0H0V64H64M64 0V64M64 0H128M64 64H128M64 64V128M320 0H384M320 0V64M320 0H256M384 0V64M384 0H448M384 64H320M384 64V128M384 64H448M320 64H256M320 64V128M384 128H448M384 128V192M384 128H320M448 128V192M448 128V64M448 128H512M448 192H384M448 192V256M448 192H512M384 192H320M384 192V256M64 384H128M64 384V448M64 384V320M64 384H0M128 384V448M128 384V320M128 384H192M128 448H64M128 448V512M128 448H192M64 448H0M64 448V512M192 256H256M192 256V320M192 256V192M192 256H128M256 256V320M256 256V192M256 256H320M256 320H192M256 320V384M256 320H320M192 320H128M192 320V384M128 64H192M128 64V128M128 64V0M192 64V128M192 64V0M192 64H256M192 128H128M192 128V192M192 128H256M128 128H64M128 128V192M128 0H192M64 128H0M64 128V192M128 192H64M128 192V256M128 192H192M64 192H0V256H64M64 192V256M128 256H64M128 256V320M64 256V320M128 320H64M64 320H0M128 512H64M128 512H192M64 512H0M192 0H256M192 192H256M192 384V448M192 384H256M192 448V512M192 448H256M192 512H256M256 0V64M256 64V128M256 128V192M256 128H320M256 192H320M256 384V448M256 384H320M256 448V512M256 448H320M256 512H320M320 128V192M320 192V256M384 256H320M384 256V320M384 256H448M320 256V320M384 320H320M384 320V384M384 320H448M320 320V384M384 384H320M384 384V448M384 384H448M320 384V448M384 448H320M384 448V512M384 448H448M320 448V512M448 320H512M448 320V384M448 320V256M512 320V384M512 320V256M512 384H448M512 384V448M448 384V448M384 512H320M384 512H448M448 0V64M448 0H512V64M448 64H512M448 256H512M448 448V512M448 448H512M448 512H512V448M512 64V128M512 128V192M512 192V256" stroke="white" stroke-width="0.5" /></svg>');
   mix-blend-mode: overlay;
-  opacity: 0.5;
+  opacity: 0.25;
 }
 .hero-gradient {
   top: 15rem;
   left: 50%;
   transform: translateX(-50%);
   filter: blur(5rem);
-  opacity: 0.75;
+  opacity: 0.65;
   mix-blend-mode: screen;
-  /* animation: gradientOpacityBlur 3500ms linear infinite; */
+  animation: gradientOpacityBlur 3500ms linear infinite;
 }
 .hero-gradient span:nth-child(1) {
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   border-radius: 50%;
   background: radial-gradient(rgba(61, 103, 255, 1), transparent 60%);
 }
 .hero-gradient span:nth-child(2) {
-  z-index: -2;
+  z-index: 1;
   position: absolute;
   border-radius: 50%;
   background: radial-gradient(rgba(210, 168, 255, 1), transparent 60%);
 }
 .hero-gradient span:nth-child(3) {
-  z-index: -2;
+  z-index: 2;
   position: absolute;
   border-radius: 50%;
   background: radial-gradient(rgba(87, 211, 101, 1), transparent 60%);
@@ -322,94 +328,16 @@ body {
   filter: blur(8px);
 }
 
-.parallax-effect {
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
-}
-
-.parallax-img_1,
-.parallax-img_2,
-.parallax-img_3 {
-  transition-duration: 200ms;
-  font-family: "IBM Plex Mono", monospace !important;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.parallax-img_1:hover,
-.parallax-img_2:hover,
-.parallax-img_3:hover {
-  transform: translateZ(4px);
-  transition-duration: 200ms;
-  box-shadow: 0 0 20px 5px #090c1020;
-}
-.parallax-img_1:hover::after,
-.parallax-img_2:hover::after,
-.parallax-img_3:hover::after {
-  opacity: 0.5;
-}
-.parallax-img_1::after {
-  opacity: 0;
-  content: "{ Header }";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: #090c1060;
-  color: var(--white-100);
-  /* backdrop-filter: blur(2px); */
-  pointer-events: none;
-  transition-duration: 200ms;
-}
-.parallax-img_2::after {
-  opacity: 0;
-  content: "{ Sidebar }";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: #090c1060;
-  color: var(--white-100);
-  /* backdrop-filter: blur(2px); */
-  pointer-events: none;
-  transition-duration: 200ms;
-}
-.parallax-img_3::after {
-  opacity: 0;
-  content: "{ Body }";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: #090c1060;
-  color: var(--white-100);
-  /* backdrop-filter: blur(2px); */
-  pointer-events: none;
-  transition-duration: 200ms;
-}
-
 /* WEB SERVICES */
 #ws-card {
   position: relative;
+  transition: opacity 200ms;
 }
 
-#ws-card:hover::before {
-  opacity: 1;
-}
+#ws-card:hover::before,
 #ws-card:hover::after {
   opacity: 1;
+  transition: opacity 200ms;
 }
 
 #ws-card::before {
@@ -427,6 +355,7 @@ body {
   z-index: 0;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 200ms;
 }
 #ws-card::after {
   content: " ";
@@ -443,6 +372,7 @@ body {
   z-index: 0;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 200ms;
 }
 
 #sec-3_bg-grid {

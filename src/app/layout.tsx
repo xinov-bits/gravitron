@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
-const ibmPlexSas = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400", "500", "500", "600", "700"] });
+const ibmPlexSas = IBM_Plex_Sans({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "500", "600", "700"] });
 
 export const metadata: Metadata = {
   title: "Gravitron",
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 // COMPONENTS
 import Header from '../components/interface/Header';
 import MbHeader from '../components/interface/MbHeader';
+import Footer from '../components/interface/Footer';
 
 
 export default function RootLayout({
@@ -34,6 +35,8 @@ export default function RootLayout({
         <MbHeader />
 
         {children}
+
+        <Footer />
       </body>
     </html>
   );
