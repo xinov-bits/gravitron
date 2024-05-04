@@ -40,6 +40,9 @@ const Header = () => {
     }
   }, [menuShow]);
 
+
+  // MENUs
+
   const productMenu = [
     {
       'name': 'build a website',
@@ -88,6 +91,39 @@ const Header = () => {
     },
   ]
 
+  const solutionsMenu = [
+    {
+      'name': 'GitLabs for',
+      'lists': [
+        {
+          'name': 'Freelancers',
+          'desc': 'Explore how freelancers do more, faster with GitLabs',
+          'icon': 'freelancers',
+        },
+        {
+          'name': 'Agencies',
+          'desc': 'Discover how GitLabs can power your agency\'s growth',
+          'icon': 'agencies',
+        },
+        {
+          'name': 'Startups',
+          'desc': 'Learn how to move faster with GitLabs',
+          'icon': 'startups',
+        },
+        {
+          'name': 'Enterprise',
+          'desc': 'Learn how world-class organizations build faster with GitLabs',
+          'icon': 'enterprise',
+        },
+        {
+          'name': 'Global alliances',
+          'desc': 'Learn about becoming a global alliance partner',
+          'icon': 'global_alliances',
+        },
+      ]
+    },
+  ]
+
 
   return (
     <>
@@ -106,50 +142,49 @@ const Header = () => {
               <div> Home </div>
             </li>
 
-            <li className="relative flex justify-center items-center w-max px-3 h-full text-[--fgColor-muted-100] hover:text-[--white-100] after:content-[''] after:absolute after:bottom-0 after:w-[80%] hover:after:h-0.5 after:h-0 after:bg-[--primary-400] after:duration-200 duration-200 cursor-pointer"
-              onClick={() => {
-                !menuOpen ? setMenuShow('product') : setMenuShow('')
-              }}
-            >
-              <div className="mr-1.5"> Product </div>
+            <label className="relative flex justify-center items-center w-max px-3 h-full text-[--fgColor-muted-100] hover:text-[--white-100] after:content-[''] after:absolute after:bottom-0 after:w-[80%] hover:after:h-0.5 after:h-0 after:bg-[--primary-400] after:duration-200 duration-200 cursor-pointer" htmlFor="product">
+              <input className="hidden"
+                type="radio"
+                name="menu"
+                value="product"
+                id="product"
+                onChange={(e) => {
+                  setMenuShow('');
 
-              <ChevronDownIcon
-                className="flex justify-center items-center size-4 text-white"
-                style={{
-                  transform: `scaleY(${menuShow === 'product' ? '-1' : '1 '})`
+                  setTimeout(() => {
+                    setMenuShow(e.target.value)
+                  }, 300);
                 }}
+                onClick={() => menuOpen && (setMenuOpen(false), setMenuShow(''))}
+                checked={menuShow === 'product'}
               />
-            </li>
 
-            <li className="relative flex justify-center items-center w-max px-3 h-full text-[--fgColor-muted-100] hover:text-[--white-100] after:content-[''] after:absolute after:bottom-0 after:w-[80%] hover:after:h-0.5 after:h-0 after:bg-[--primary-400] after:duration-200 duration-200 cursor-pointer"
-              onClick={() => {
-                !menuOpen ? setMenuShow('solutions') : setMenuShow('')
-              }}
-            >
-              <div className="mr-1.5"> Solutions </div>
+              <div className="mr-1.5">Product</div>
 
-              <ChevronDownIcon
-                className="flex justify-center items-center size-4 text-white"
-                style={{
-                  transform: `scaleY(${menuShow === 'solutions' ? '-1' : '1 '})`
+              <ChevronDownIcon className={`size-4 ${menuShow === 'product' && '-scale-y-100'} duration-75`} />
+            </label>
+
+            <label className="relative flex justify-center items-center w-max px-3 h-full text-[--fgColor-muted-100] hover:text-[--white-100] after:content-[''] after:absolute after:bottom-0 after:w-[80%] hover:after:h-0.5 after:h-0 after:bg-[--primary-400] after:duration-200 duration-200 cursor-pointer" htmlFor="solutions">
+              <input className="hidden"
+                type="radio"
+                name="menu"
+                value="solutions"
+                id="solutions"
+                onChange={(e) => {
+                  setMenuShow('');
+
+                  setTimeout(() => {
+                    setMenuShow(e.target.value)
+                  }, 300);
                 }}
+                onClick={() => menuOpen && (setMenuOpen(false), setMenuShow(''))}
+                checked={menuShow === 'solutions'}
               />
-            </li>
 
-            <li className="relative flex justify-center items-center w-max px-3 h-full text-[--fgColor-muted-100] hover:text-[--white-100] after:content-[''] after:absolute after:bottom-0 after:w-[80%] hover:after:h-0.5 after:h-0 after:bg-[--primary-400] after:duration-200 duration-200 cursor-pointer"
-              onClick={() => {
-                !menuOpen ? setMenuShow('Resources') : setMenuShow('')
-              }}
-            >
-              <div className="mr-1.5"> Resources </div>
+              <div className="mr-1.5">Solutions</div>
 
-              <ChevronDownIcon
-                className="flex justify-center items-center size-4 text-white"
-                style={{
-                  transform: `scaleY(${menuShow === 'Resources' ? '-1' : '1 '})`
-                }}
-              />
-            </li>
+              <ChevronDownIcon className={`size-4 ${menuShow === 'solutions' && '-scale-y-100'} duration-75`} />
+            </label>
 
             <li className="relative flex justify-center items-center w-max px-3 h-full text-[--fgColor-muted-100] hover:text-[--white-100] cursor-pointer">
               <div> Contact </div>
@@ -176,42 +211,64 @@ const Header = () => {
         </div>
       </header>
 
-      <div className={`absolute z-[500] top-14 flex flex-wrap justify-start items-start w-full h-auto p-6 gap-6 bg-[--white-100] ${menuOpen ? 'scale-y-100 pointer-events-auto' : 'scale-y-0 pointer-events-none'} origin-top overflow-y-hidden duration-300`}>
-        {productMenu.map((k, index) => (
-          <div key={index} className="block items-start w-auto max-w-[50%] h-auto scale-y-100">
-            <div className="flex justify-start items-center w-full pb-4 text-sm font-medium tracking-wide leading-none text-[--black-400] border-b border-[--white-400] uppercase select-none">
-              {k.name}
-            </div>
+      {menuOpen && (
+        <motion.div
+          className={`absolute z-[500] top-14 flex flex-wrap justify-start items-start w-full h-auto p-6 gap-x-6 gap-y-10 bg-[--white-100] ${menuOpen ? 'scale-y-100 pointer-events-auto' : 'scale-y-0 pointer-events-none'} origin-top overflow-y-hidden duration-0`}
+          initial={{ scaleY: 0, pointerEvents: "none" }}
+          animate={{ scaleY: 1, pointerEvents: "auto" }}
+          // exit={{ scaleY: 0, pointerEvents: "none" }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          {(menuShow === 'product' ? productMenu : (menuShow === 'solutions' ? solutionsMenu : [])).map((k, index) => (
+            <div className="block items-start w-auto max-w-full h-auto">
+              <motion.div
+                key={index}
+                className={`block items-start w-auto max-w-full h-auto duration-0`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.4
+                }}
+              >
+                <div className="flex justify-start items-center w-full pb-4 text-sm font-medium tracking-wide leading-none text-[--black-400] border-b border-[--white-400] uppercase select-none">
+                  {k.name}
+                </div>
 
-            <div className="flex flex-wrap gap-8 justify-start items-start w-full mt-5">
-              {k.lists.map((item) => (
-                <Link key={item.name} href="/">
-                  <div className="group flex justify-start items-start w-[16rem] h-full">
-                    <div className="flex justify-center items-center size-7 mr-1.5">
-                      <svg className="flex justify-center items-center size-7" width={24} height={24}>
-                        <use
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                          xlinkHref={`/assets/icons/menuIcons.svg#${item.icon}`}
-                        ></use>
-                      </svg>
-                    </div>
+                <div className="flex flex-wrap gap-8 justify-start items-start w-full mt-5">
+                  {k.lists.map((item) => (
+                    <Link key={item.name} href="/">
+                      <div className="group flex justify-start items-start w-[16rem] h-full">
+                        <div className="flex justify-center items-center size-7 mr-1.5">
+                          <svg className="flex justify-center items-center size-7 group-hover:text-[--blue-400]" width={24} height={24}>
+                            <use
+                              xmlnsXlink="http://www.w3.org/1999/xlink"
+                              xlinkHref={`/assets/icons/menuIcons.svg#${item.icon}`}
+                            ></use>
+                          </svg>
+                        </div>
 
-                    <div className="block items-center w-auto">
-                      <div className="flex justify-start items-center w-auto text-base font-medium leading-none group-hover:underline">
-                        {item.name}
+                        <div className="block items-center w-auto">
+                          <div className="flex justify-start items-center w-auto text-base font-medium leading-none group-hover:text-[--blue-400] group-hover:underline duration-0">
+                            {item.name}
+                          </div>
+
+                          <div className="flex justify-start items-center w-auto mt-2 text-sm leading-tight text-[--black-200]">
+                            {item.desc}
+                          </div>
+                        </div>
                       </div>
-
-                      <div className="flex justify-start items-center w-auto mt-2 text-sm leading-tight text-[--black-200]">
-                        {item.desc}
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              ))}
+                    </Link>
+                  ))}
+                </div>
+              </motion.div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </motion.div>
+      )}
     </>
   )
 }

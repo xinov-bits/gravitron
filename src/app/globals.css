@@ -82,6 +82,10 @@
   -webkit-backface-visibility: hidden;
 }
 
+svg {
+  transition-duration: 0ms;
+}
+
 *:focus {
   outline: none !important;
 }
