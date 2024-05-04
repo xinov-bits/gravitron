@@ -237,10 +237,10 @@ const Header = () => {
                   {k.name}
                 </div>
 
-                <div className="flex flex-wrap gap-8 justify-start items-start w-full mt-5">
+                <div className="flex flex-wrap gap-4 justify-start items-start w-full mt-2">
                   {k.lists.map((item) => (
                     <Link key={item.name} href="/">
-                      <div className="group flex justify-start items-start w-[16rem] h-full">
+                      <div className="group flex justify-start items-start w-[16rem] h-full px-2 py-3.5 hover:bg-[--white-200] rounded-lg">
                         <div className="flex justify-center items-center size-7 mr-1.5">
                           <svg className="flex justify-center items-center size-7 group-hover:text-[--blue-400]" width={24} height={24}>
                             <use
