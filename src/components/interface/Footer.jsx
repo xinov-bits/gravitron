@@ -100,7 +100,7 @@ const Header = () => {
     return (
         <>
             <footer
-                className={`sticky bottom-auto sm:bottom-auto md:bottom-0 lg:bottom-0 xl:bottom-0 z-[0] block sm:block md:flex lg:flex xl:flex justify-start items-start w-full h-full p-8 sm:p-8 md:p-16 lg:p-16 xl:p-16 gap-2 sm:gap-2 md:gap-10 lg:gap-10 xl:gap-10 text-[--white-100] bg-[--black-1100]`}
+                className={`z-[0] block sm:block md:flex lg:flex xl:flex justify-start items-start w-full h-full p-8 sm:p-8 md:p-16 lg:p-16 xl:p-16 gap-2 sm:gap-2 md:gap-10 lg:gap-10 xl:gap-10 text-[--white-100] bg-[--black-1100]`}
             >
                 <div className="block justify-start items-start w-full sm:w-full md:w-[16%] lg:w-[16%] xl:w-[16%] mb-8 sm:mb-8 md:mb-0 lg:mb-0 xl:mb-0 select-none">
                     <div className="flex justify-start items-center w-full">

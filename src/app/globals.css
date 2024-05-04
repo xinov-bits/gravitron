@@ -91,7 +91,8 @@ body {
 }
 
 ::selection {
-  background-color: #388bfd66;
+  background-color: #2075f6; /* 388bfd66 */
+  color: white;
 }
 
 @layer utilities {
@@ -169,7 +170,12 @@ img {
 
 .gradient.gradient-blue {
   color: var(--fgColor-done, var(--color-done-fg));
-  background: linear-gradient(260deg, rgba(61, 103, 255, 1)  0%, rgba(210, 168, 255, 1)   50%, rgb(255, 185, 247)  80%),
+  background: linear-gradient(
+      260deg,
+      rgba(61, 103, 255, 1) 0%,
+      rgba(210, 168, 255, 1) 50%,
+      rgb(255, 185, 247) 80%
+    ),
     #fff;
   -webkit-background-clip: text;
   background-clip: text;
@@ -179,7 +185,7 @@ img {
 /* HERO SECTION */
 #hero-section {
   position: relative;
-  background-color: var(--black-1000);
+  background-color: var(--black-1100);
 }
 #hero-section::after {
   content: "";
@@ -198,7 +204,7 @@ img {
   filter: blur(5rem);
   opacity: 0.65;
   mix-blend-mode: screen;
-  animation: gradientOpacityBlur 3500ms linear infinite;
+  /* animation: gradientOpacityBlur 3500ms linear infinite; */
 }
 .hero-gradient span:nth-child(1) {
   z-index: 0;
@@ -274,7 +280,7 @@ img {
   content: "✦ Designing Your Digital Triumph";
   position: absolute;
   z-index: 2;
-  background-color: var(--black-1000);
+  background-color: var(--black-1100);
   width: 14.36rem;
   height: 1.95rem;
   border-radius: 100px;
@@ -382,4 +388,25 @@ img {
 /* CLIENTS */
 .splide__track {
   height: 100%;
+}
+
+/* HEADER */
+#header-menu_box {
+  z-index: 500;
+  box-shadow: 0px 0px 0px 1px #848d9720,
+  0px 2px 12px 2px #848d9705;
+}
+
+#header-menu_box::before {
+  position: absolute;
+  z-index: -1;
+  top: -18px;
+  content: url('data:image/svg+xml,<svg class="frame-13" width="32" height="11" viewBox="0 0 32 11" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_875_7)"><path d="M27 12H29.5591L27.678 10.2649L18.7993 2.07542C17.2448 0.641526 14.7552 0.641528 13.2007 2.07542L4.322 10.2649L2.44093 12H5H27Z" fill="%230c1018" stroke="%23848d9720" stroke-width="1" /></g><defs><clipPath id="clip0_875_7"><rect width="32" height="11" fill="white" /></clipPath></defs></svg>');
+}
+
+#header-menu_box::after {
+  position: absolute;
+  z-index: 500;
+  top: -18px;
+  content: url('data:image/svg+xml,<svg class="frame-13" width="32" height="11" viewBox="0 0 32 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.8787 2.81048C15.0503 1.72984 16.9497 1.72984 18.1213 2.81048L27 11H5L13.8787 2.81048Z" fill="%230c1018" /></svg>');
 }

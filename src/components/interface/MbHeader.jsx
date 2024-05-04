@@ -7,12 +7,9 @@ import Link from 'next/link';
 
 // ICONS & CUSTOM COMPONENTS
 import { Bars2Icon } from '@heroicons/react/20/solid';
-import Menu from '../models/Menu';
 
 
 const Header = () => {
-    const [menuShow, setMenuShow] = useState('');
-
 
     return (
         <>
@@ -31,12 +28,6 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-
-            {menuShow !== '' && (
-                <Menu
-                    name={menuShow}
-                />
-            )}
         </>
     )
 }

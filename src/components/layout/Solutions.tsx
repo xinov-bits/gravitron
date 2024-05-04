@@ -62,7 +62,7 @@ const Solutions = () => {
                         glarePosition='all'
                         glareColor='#45b4ff'
                     >
-                        <div className="group block items-start size-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-lg overflow-hidden cursor-pointer">
+                        <div className="group block items-start size-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-md overflow-hidden cursor-pointer">
                             <div className="block items-start w-full h-auto p-6 sm:p-6 md:p-8 lg:p-8 xl:p-8">
                                 <div className="flex justify-start items-center w-max px-2.5 py-2 space-x-1 leading-none text-sm text-[#45b4ff] border border-[#45b4ff] rounded-full select-none" id="sec2_chip1">
                                     <BoltIcon className="flex justify-center items-center size-3.5" />
@@ -83,7 +83,7 @@ const Solutions = () => {
                                         type="white-outlined"
                                         width="w-36"
                                         height="h-12"
-                                        round="rounded-lg"
+                                        round="rounded-md"
                                         icon={true}
                                     >
                                         Explore more
@@ -101,7 +101,7 @@ const Solutions = () => {
                                     />
                                 </div>
 
-                                <div className="-top-6 group-hover:-top-8 left-0 absolute z-[2] flex justify-center items-center rounded-lg overflow-hidden shadow-lg group-hover:shadow-2xl scale-[0.95] brightness-95 delay-75">
+                                <div className="-top-6 group-hover:-top-8 left-0 absolute z-[2] flex justify-center items-center rounded-md overflow-hidden shadow-lg group-hover:shadow-2xl scale-[0.95] brightness-95 delay-75">
                                     <Image className="flex justify-center items-center w-auto"
                                         src={`/assets/background/home/examples/${images[1]}`}
                                         width={1296}
@@ -110,7 +110,7 @@ const Solutions = () => {
                                     />
                                 </div>
 
-                                <div className="-top-12 group-hover:-top-16 left-0 absolute z-[3] flex justify-center items-center rounded-lg overflow-hidden shadow-lg group-hover:shadow-2xl scale-[0.9]"
+                                <div className="-top-12 group-hover:-top-16 left-0 absolute z-[3] flex justify-center items-center rounded-md overflow-hidden shadow-lg group-hover:shadow-2xl scale-[0.9]"
                                     onClick={() => {
                                         let dupImgs = [...images];
 
@@ -153,7 +153,7 @@ const Solutions = () => {
                                         type="white-outlined"
                                         width="w-36"
                                         height="h-12"
-                                        round="rounded-lg"
+                                        round="rounded-md"
                                         icon={true}
                                     >
                                         Explore more
@@ -171,7 +171,7 @@ const Solutions = () => {
                                     />
                                 </div>
 
-                                <div className="-top-6 group-hover:-top-8 left-0 absolute z-[2] flex justify-center items-center rounded-lg overflow-hidden shadow-lg group-hover:shadow-2xl scale-[0.95] brightness-95 delay-75">
+                                <div className="-top-6 group-hover:-top-8 left-0 absolute z-[2] flex justify-center items-center rounded-md overflow-hidden shadow-lg group-hover:shadow-2xl scale-[0.95] brightness-95 delay-75">
                                     <Image className="flex justify-center items-center w-auto"
                                         src={`/assets/background/home/examples/${images[1]}`}
                                         width={1296}
@@ -180,7 +180,7 @@ const Solutions = () => {
                                     />
                                 </div>
 
-                                <div className="-top-12 group-hover:-top-16 left-0 absolute z-[3] flex justify-center items-center rounded-lg overflow-hidden shadow-lg group-hover:shadow-2xl scale-[0.9]"
+                                <div className="-top-12 group-hover:-top-16 left-0 absolute z-[3] flex justify-center items-center rounded-md overflow-hidden shadow-lg group-hover:shadow-2xl scale-[0.9]"
                                     onClick={() => {
                                         let dupImgs = [...images];
 
@@ -212,7 +212,7 @@ const Solutions = () => {
                             glarePosition='all'
                             glareColor='#57d365'
                         >
-                            <div className="z-[10] group block items-start w-full h-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-lg overflow-hidden cursor-pointer">
+                            <div className="z-[10] group block items-start w-full h-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-md overflow-hidden cursor-pointer">
                                 <div className="block items-start w-full h-full p-6 sm:p-6 md:p-8 lg:p-8 xl:p-8">
                                     <div className="flex justify-start items-center w-max px-2.5 py-2 space-x-1 leading-none text-sm text-[#57d365] border border-[#57d365] rounded-full select-none" id="sec2_chip1">
                                         <PaintBrushIcon className="flex justify-center items-center size-3.5" />
@@ -253,7 +253,7 @@ const Solutions = () => {
                                             type="white-outlined"
                                             width="w-36"
                                             height="h-12"
-                                            round="rounded-lg"
+                                            round="rounded-md"
                                             icon={true}
                                         >
                                             Explore more
@@ -264,7 +264,7 @@ const Solutions = () => {
                         </Tilt>
 
                         <div className="z-[10] block sm:block md:hidden lg:hidden xl:hidden !w-full !h-auto">
-                            <div className="z-[10] group block items-start w-full h-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-lg overflow-hidden cursor-pointer">
+                            <div className="z-[10] group block items-start w-full h-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-md overflow-hidden cursor-pointer">
                                 <div className="block items-start w-full h-full p-6 sm:p-6 md:p-8 lg:p-8 xl:p-8">
                                     <div className="flex justify-start items-center w-max px-2.5 py-2 space-x-1 leading-none text-sm text-[#57d365] border border-[#57d365] rounded-full select-none" id="sec2_chip1">
                                         <PaintBrushIcon className="flex justify-center items-center size-3.5" />
@@ -305,7 +305,7 @@ const Solutions = () => {
                                             type="white-outlined"
                                             width="w-36"
                                             height="h-12"
-                                            round="rounded-lg"
+                                            round="rounded-md"
                                             icon={true}
                                         >
                                             Explore more
@@ -325,7 +325,7 @@ const Solutions = () => {
                             glarePosition='all'
                             glareColor='#ffd33d'
                         >
-                            <div className="z-[10] group relative flex justify-center items-center w-full h-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-lg overflow-hidden cursor-pointer">
+                            <div className="z-[10] group relative flex justify-center items-center w-full h-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-md overflow-hidden cursor-pointer">
                                 <div className="z-[1] block items-start w-full h-full p-6 sm:p-6 md:p-8 lg:p-8 xl:p-8">
                                     <div className="flex justify-start items-center w-max px-2.5 py-2 space-x-1 leading-none text-sm text-[#ffd33d] border border-[#ffd33d] rounded-full select-none" id="sec2_chip1">
                                         <SwatchIcon className="flex justify-center items-center size-3.5" />
@@ -346,7 +346,7 @@ const Solutions = () => {
                                             type="white-outlined"
                                             width="w-36"
                                             height="h-12"
-                                            round="rounded-lg"
+                                            round="rounded-md"
                                             icon={true}
                                         >
                                             Explore more
@@ -366,7 +366,7 @@ const Solutions = () => {
                         </Tilt>
 
                         <div className="z-[10] block sm:block md:hidden lg:hidden xl:hidden !w-full !h-auto mt-6 sm:mt-6 md:mt-8 lg:mt-8 xl:mt-8">
-                            <div className="z-[10] group relative flex justify-center items-center w-full h-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-lg overflow-hidden cursor-pointer">
+                            <div className="z-[10] group relative flex justify-center items-center w-full h-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-md overflow-hidden cursor-pointer">
                                 <div className="z-[1] block items-start w-full h-full p-6 sm:p-6 md:p-8 lg:p-8 xl:p-8">
                                     <div className="flex justify-start items-center w-max px-2.5 py-2 space-x-1 leading-none text-sm text-[#ffd33d] border border-[#ffd33d] rounded-full select-none" id="sec2_chip1">
                                         <SwatchIcon className="flex justify-center items-center size-3.5" />
@@ -387,7 +387,7 @@ const Solutions = () => {
                                             type="white-outlined"
                                             width="w-36"
                                             height="h-12"
-                                            round="rounded-lg"
+                                            round="rounded-md"
                                             icon={true}
                                         >
                                             Explore more
