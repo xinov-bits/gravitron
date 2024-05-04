@@ -222,10 +222,10 @@ const Header = () => {
           }}
         >
           {(menuShow === 'product' ? productMenu : (menuShow === 'solutions' ? solutionsMenu : [])).map((k, index) => (
-            <div className="block items-start w-auto max-w-full h-auto">
+            <div className="block items-start w-full h-auto">
               <motion.div
                 key={index}
-                className={`block items-start w-auto max-w-full h-auto duration-0`}
+                className={`block items-start w-full max-w-full h-auto duration-0`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
