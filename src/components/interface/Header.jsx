@@ -48,11 +48,6 @@ const Header = () => {
       'name': 'build a website',
       'lists': [
         {
-          'name': 'Designer',
-          'desc': 'Creative control and flexibility without code',
-          'icon': 'cursor',
-        },
-        {
           'name': 'CMS',
           'desc': 'Flexible content management',
           'icon': 'cms',
@@ -61,6 +56,16 @@ const Header = () => {
           'name': 'Ecommerce',
           'desc': 'Manage stunning online stores',
           'icon': 'ecommerce',
+        },
+        {
+          'name': 'Blog',
+          'desc': 'Elucidate your ideas and thoughts to the world',
+          'icon': 'blog',
+        },
+        {
+          'name': 'Education',
+          'desc': 'Manage a website for your institute, or students',
+          'icon': 'education',
         },
         {
           'name': 'Interactions',
@@ -83,9 +88,19 @@ const Header = () => {
           'icon': 'edit',
         },
         {
+          'name': 'Domain Management',
+          'desc': 'Find the best domains for your brand or company',
+          'icon': 'domain',
+        },
+        {
           'name': 'SEO',
           'desc': 'Fine tuned control, without engineers',
           'icon': 'seo',
+        },
+        {
+          'name': 'Hosting',
+          'desc': 'Fast and reliable hosting for your website',
+          'icon': 'hosting',
         },
       ]
     },
@@ -119,6 +134,11 @@ const Header = () => {
           'name': 'Global alliances',
           'desc': 'Learn about becoming a global alliance partner',
           'icon': 'global_alliances',
+        },
+        {
+          'name': 'UI/UX Design',
+          'desc': 'Creative control and flexibility without code',
+          'icon': 'cursor',
         },
       ]
     },
@@ -237,7 +257,7 @@ const Header = () => {
                   {k.name}
                 </div>
 
-                <div className="flex flex-wrap gap-4 justify-start items-start w-full mt-2">
+                <div className="flex flex-wrap gap-x-4 gap-y-2 justify-start items-start w-full mt-2">
                   {k.lists.map((item) => (
                     <Link key={item.name} href="/">
                       <div className="group flex justify-start items-start w-[16rem] h-full px-2 py-3.5 hover:bg-[--white-200] rounded-lg">
