@@ -63,7 +63,7 @@ const Marketing = () => {
                             src="/assets/background/marketing/post.png"
                             width={1080}
                             height={1413}
-                            alt=""
+                            alt="marketing"
                         />
                     </div>
                 </div>

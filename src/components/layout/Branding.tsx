@@ -19,7 +19,7 @@ const Branding = () => {
                             src="/assets/background/branding/branding.png"
                             width={1504}
                             height={1128}
-                            alt=""
+                            alt="branding, logo"
                         />
                     </div>
 
@@ -52,7 +52,7 @@ const Branding = () => {
                             src="/assets/background/branding/branding.png"
                             width={1504}
                             height={1128}
-                            alt=""
+                            alt="branding, logo"
                         />
                     </div>
                 </div>

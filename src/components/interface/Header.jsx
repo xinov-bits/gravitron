@@ -51,31 +51,37 @@ const Header = () => {
           'name': 'CMS',
           'desc': 'Flexible content management',
           'icon': 'cms',
+          'link': '/',
         },
         {
           'name': 'Ecommerce',
           'desc': 'Manage stunning online stores',
           'icon': 'ecommerce',
+          'link': '/ecommerce',
         },
         {
           'name': 'Blog',
           'desc': 'Elucidate your ideas and thoughts to the world',
           'icon': 'blog',
+          'link': '/',
         },
         {
           'name': 'Education',
           'desc': 'Manage a website for your institute, or students',
           'icon': 'education',
+          'link': '/',
         },
         {
           'name': 'Interactions',
           'desc': 'Craft immersive experiences',
           'icon': 'interactions',
+          'link': '/',
         },
         {
           'name': 'Localization',
           'desc': 'Customize your site for a worldwide audience',
           'icon': 'localization',
+          'link': '/',
         },
       ]
     },
@@ -86,21 +92,25 @@ const Header = () => {
           'name': 'Edit mode',
           'desc': 'Custom-built environment for content teammates',
           'icon': 'edit',
+          'link': '/',
         },
         {
           'name': 'Domain Management',
           'desc': 'Find the best domains for your brand or company',
           'icon': 'domain',
+          'link': '/',
         },
         {
           'name': 'SEO',
           'desc': 'Fine tuned control, without engineers',
           'icon': 'seo',
+          'link': '/',
         },
         {
           'name': 'Hosting',
           'desc': 'Fast and reliable hosting for your website',
           'icon': 'hosting',
+          'link': '/',
         },
       ]
     },
@@ -114,31 +124,37 @@ const Header = () => {
           'name': 'Freelancers',
           'desc': 'Explore how freelancers do more, faster with GitLabs',
           'icon': 'freelancers',
+          'link': '/',
         },
         {
           'name': 'Agencies',
           'desc': 'Discover how GitLabs can power your agency\'s growth',
           'icon': 'agencies',
+          'link': '/',
         },
         {
           'name': 'Startups',
           'desc': 'Learn how to move faster with GitLabs',
           'icon': 'startups',
+          'link': '/',
         },
         {
           'name': 'Enterprise',
           'desc': 'Learn how world-class organizations build faster with GitLabs',
           'icon': 'enterprise',
+          'link': '/',
         },
         {
           'name': 'Global alliances',
           'desc': 'Learn about becoming a global alliance partner',
           'icon': 'global_alliances',
+          'link': '/',
         },
         {
           'name': 'UI/UX Design',
           'desc': 'Creative control and flexibility without code',
           'icon': 'cursor',
+          'link': '/',
         },
       ]
     },
@@ -231,63 +247,68 @@ const Header = () => {
         </div>
       </header>
 
-      {menuOpen && (
-        <motion.div
-          className={`absolute z-[500] top-14 flex flex-wrap justify-start items-start w-full h-auto p-6 gap-x-6 gap-y-10 bg-[--white-100] ${menuOpen ? 'scale-y-100 pointer-events-auto' : 'scale-y-0 pointer-events-none'} origin-top overflow-y-hidden duration-0`}
-          initial={{ scaleY: 0, pointerEvents: "none" }}
-          animate={{ scaleY: 1, pointerEvents: "auto" }}
-          // exit={{ scaleY: 0, pointerEvents: "none" }}
-          transition={{
-            duration: 0.3,
-          }}
-        >
-          {(menuShow === 'product' ? productMenu : (menuShow === 'solutions' ? solutionsMenu : [])).map((k, index) => (
-            <div key={index} className="block items-start w-full h-auto">
-              <motion.div
-                className={`block items-start w-full max-w-full h-auto duration-0`}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{
-                  duration: 0.4,
-                  delay: 0.4
-                }}
-              >
-                <div className="flex justify-start items-center w-full pb-4 text-sm font-medium tracking-wide leading-none text-[--black-400] border-b border-[--white-400] uppercase select-none">
-                  {k.name}
-                </div>
+      <AnimatePresence>
+        {(menuOpen && menuShow !== '') && (
+          <motion.div
+            className={`absolute z-[500] top-14 flex flex-wrap justify-start items-start w-full h-auto p-6 gap-x-6 gap-y-10 bg-[--white-100] ${menuOpen ? 'scale-y-100 pointer-events-auto' : 'scale-y-0 pointer-events-none'} origin-top overflow-y-hidden duration-0`}
+            initial={{ scaleY: 0, pointerEvents: "none" }}
+            animate={{ scaleY: 1, pointerEvents: "auto" }}
+            // exit={{ scaleY: 0, pointerEvents: "none" }}
+            transition={{
+              duration: 0.3,
+              delay: 0,
+            }}
+          >
+            <AnimatePresence>
+              {(menuShow === 'product' ? productMenu : (menuShow === 'solutions' ? solutionsMenu : [])).map((k, index) => (
+                <div key={index} className="block items-start w-full h-auto">
+                  <motion.div
+                    className={`block items-start w-full max-w-full h-auto duration-0`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{
+                      duration: 0.4,
+                      delay: 0.3,
+                    }}
+                  >
+                    <div className="flex justify-start items-center w-full pb-4 text-sm font-medium tracking-wide leading-none text-[--black-400] border-b border-[--white-400] uppercase select-none">
+                      {k.name}
+                    </div>
 
-                <div className="flex flex-wrap gap-x-4 gap-y-2 justify-start items-start w-full mt-2">
-                  {k.lists.map((item) => (
-                    <Link key={item.name} href="/">
-                      <div className="group flex justify-start items-start w-[16rem] h-full px-2 py-3.5 hover:bg-[--white-200] rounded-lg">
-                        <div className="flex justify-center items-center size-7 mr-1.5">
-                          <svg className="flex justify-center items-center size-7 group-hover:text-[--blue-400]" width={24} height={24}>
-                            <use
-                              xmlnsXlink="http://www.w3.org/1999/xlink"
-                              xlinkHref={`/assets/icons/menuIcons.svg#${item.icon}`}
-                            ></use>
-                          </svg>
-                        </div>
+                    <div className="flex flex-wrap gap-x-4 gap-y-2 justify-start items-start w-full mt-2">
+                      {k.lists.map((item) => (
+                        <Link key={item.name} href={item.link} onClick={() => setMenuShow('')}>
+                          <div className="group flex justify-start items-start w-[16rem] h-full px-2 py-3.5 hover:bg-[--white-200] rounded-lg">
+                            <div className="flex justify-center items-center size-7 mr-1.5">
+                              <svg className="flex justify-center items-center size-7 group-hover:text-[--blue-400]" width={24} height={24}>
+                                <use
+                                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                                  xlinkHref={`/assets/icons/menuIcons.svg#${item.icon}`}
+                                ></use>
+                              </svg>
+                            </div>
 
-                        <div className="block items-center w-auto">
-                          <div className="flex justify-start items-center w-auto text-base font-medium leading-none group-hover:text-[--blue-400] group-hover:underline duration-0">
-                            {item.name}
+                            <div className="block items-center w-auto">
+                              <div className="flex justify-start items-center w-auto text-base font-medium leading-none group-hover:text-[--blue-400] group-hover:underline duration-0">
+                                {item.name}
+                              </div>
+
+                              <div className="flex justify-start items-center w-auto mt-2 text-sm leading-tight text-[--black-200]">
+                                {item.desc}
+                              </div>
+                            </div>
                           </div>
-
-                          <div className="flex justify-start items-center w-auto mt-2 text-sm leading-tight text-[--black-200]">
-                            {item.desc}
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
+                        </Link>
+                      ))}
+                    </div>
+                  </motion.div>
                 </div>
-              </motion.div>
-            </div>
-          ))}
-        </motion.div>
-      )}
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   )
 }

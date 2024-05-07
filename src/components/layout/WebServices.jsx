@@ -101,7 +101,7 @@ const WebServices = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 gap-y-8 sm:gap-y-8 md:gap-y-4 lg:gap-y-4 xl:gap-y-4 w-full h-full mt-8 sm:mt-8 md:mt-12 lg:mt-12 xl:mt-12 px-8 sm:px-8 md:px-10 lg:px-10 xl:px-10 f-dmsans">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 gap-y-8 sm:gap-y-8 md:gap-y-4 lg:gap-y-4 xl:gap-y-4 w-full h-full mt-8 sm:mt-8 md:mt-12 lg:mt-12 xl:mt-12 px-4 sm:px-4 md:px-8 lg:px-8 xl:px-8 f-dmsans">
                     {services.map((service, index) => (
                         <div key={index} className="relative group flex justify-center items-center w-full h-full sm:h-full md:h-[32rem] lg:h-[32rem] xl:h-[32rem] bg-[--black-600] rounded-md overflow-hidden cursor-pointer" id="ws-card" onMouseMove={handleMouseChange}>
                             <div className="z-[2] relative block items-center size-[99.6%] p-0 sm:p-0 md:p-4 lg:p-4 xl:p-4 bg-[--black-1000] rounded-md overflow-hidden">
@@ -138,14 +138,14 @@ const WebServices = () => {
                                         src={service.img}
                                         width={1920}
                                         height={1080}
-                                        alt=""
+                                        alt={service.name}
                                     />
 
                                     <Image className="top-0 absolute z-[0] flex justify-center items-center w-auto rounded-md scale-[1.01] blur-lg group-hover:blur-2xl group-hover:opacity-30 opacity-20 saturate-150"
                                         src={service.img}
                                         width={1920}
                                         height={1080}
-                                        alt=""
+                                        alt={service.name}
                                     />
                                 </div>
                             </div>
