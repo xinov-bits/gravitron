@@ -98,87 +98,89 @@ const page = () => {
                         </Link>
                     </div>
 
-                    <div className="relative flex items-center w-full sm:w-full md:w-[52vw] lg:w-[52vw] xl:w-[52vw] h-full space-x-4 overflow-hidden">
-                        <div className="block justify-center items-center w-[14rem] h-full mt-64 space-y-4">
-                            <div className="flex justify-center items-center w-full h-auto">
-                                <Image className="flex justify-center items-center w-full h-auto rounded-md"
-                                    src="/assets/ecommerce/imgs/1.webp"
-                                    width={762}
-                                    height={1147}
-                                    placeholder="blur"
-                                    blurDataURL="/assets/ecommerce/imgs/1.webp"
-                                    alt=""
-                                />
+                    <div className="relative flex items-center w-full sm:w-full md:w-[52vw] lg:w-[52vw] xl:w-[52vw] h-full overflow-hidden">
+                        <div className="absolute grid grid-cols-3 gap-x-4 items-center w-[65vw] h-full">
+                            <div className="block justify-center items-center w-full h-full mt-64 space-y-6">
+                                <div className="flex justify-center items-center w-full h-auto">
+                                    <Image className="flex justify-center items-center w-full min-w-[16rem] h-auto rounded-md"
+                                        src="/assets/ecommerce/imgs/1.webp"
+                                        width={762}
+                                        height={1147}
+                                        placeholder="blur"
+                                        blurDataURL="/assets/ecommerce/imgs/1.webp"
+                                        alt=""
+                                    />
+                                </div>
+
+                                <div className="flex justify-center items-center w-full h-auto">
+                                    <Image className="flex justify-center items-center w-full min-w-[16rem] h-auto rounded-md"
+                                        src="/assets/ecommerce/imgs/6.png"
+                                        width={762}
+                                        height={843}
+                                        placeholder="blur"
+                                        blurDataURL="/assets/ecommerce/imgs/6.png"
+                                        alt=""
+                                    />
+                                </div>
                             </div>
 
-                            <div className="flex justify-center items-center w-full h-auto">
-                                <Image className="flex justify-center items-center w-full h-auto rounded-md"
-                                    src="/assets/ecommerce/imgs/6.png"
-                                    width={762}
-                                    height={843}
-                                    placeholder="blur"
-                                    blurDataURL="/assets/ecommerce/imgs/6.png"
-                                    alt=""
-                                />
-                            </div>
-                        </div>
+                            <div className="block justify-center items-center w-full h-full mt-10 space-y-6">
+                                <div className="flex justify-center items-center w-full h-auto">
+                                    <Image className="flex justify-center items-center w-full min-w-[16rem] h-auto rounded-md"
+                                        src="/assets/ecommerce/imgs/2.webp"
+                                        width={762}
+                                        height={896}
+                                        placeholder="blur"
+                                        blurDataURL="/assets/ecommerce/imgs/2.webp"
+                                        alt=""
+                                    />
+                                </div>
 
-                        <div className="block justify-center items-center w-[16rem] h-full mt-10 space-y-4">
-                            <div className="flex justify-center items-center w-full h-auto">
-                                <Image className="flex justify-center items-center w-full h-auto rounded-md"
-                                    src="/assets/ecommerce/imgs/2.webp"
-                                    width={762}
-                                    height={896}
-                                    placeholder="blur"
-                                    blurDataURL="/assets/ecommerce/imgs/2.webp"
-                                    alt=""
-                                />
-                            </div>
+                                <div className="flex justify-center items-center w-full h-auto">
+                                    <Image className="flex justify-center items-center w-full min-w-[16rem] h-auto rounded-md"
+                                        src="/assets/ecommerce/imgs/3.webp"
+                                        width={762}
+                                        height={349}
+                                        placeholder="blur"
+                                        blurDataURL="/assets/ecommerce/imgs/3.webp"
+                                        alt=""
+                                    />
+                                </div>
 
-                            <div className="flex justify-center items-center w-full h-auto">
-                                <Image className="flex justify-center items-center w-full h-auto rounded-md"
-                                    src="/assets/ecommerce/imgs/3.webp"
-                                    width={762}
-                                    height={349}
-                                    placeholder="blur"
-                                    blurDataURL="/assets/ecommerce/imgs/3.webp"
-                                    alt=""
-                                />
-                            </div>
-
-                            <div className="flex justify-center items-center w-full h-auto">
-                                <Image className="flex justify-center items-center w-full h-auto rounded-md"
-                                    src="/assets/ecommerce/imgs/5.webp"
-                                    width={762}
-                                    height={1105}
-                                    placeholder="blur"
-                                    blurDataURL="/assets/ecommerce/imgs/5.webp"
-                                    alt=""
-                                />
-                            </div>
-                        </div>
-
-                        <div className="absolute -right-[7rem] block justify-center items-center w-[14rem] h-full mt-44 space-y-4">
-                            <div className="flex justify-center items-center w-full h-auto">
-                                <Image className="flex justify-center items-center w-full h-auto rounded-md"
-                                    src="/assets/ecommerce/imgs/6.webp"
-                                    width={762}
-                                    height={1369}
-                                    placeholder="blur"
-                                    blurDataURL="/assets/ecommerce/imgs/6.webp"
-                                    alt=""
-                                />
+                                <div className="flex justify-center items-center w-full h-auto">
+                                    <Image className="flex justify-center items-center w-full min-w-[16rem] h-auto rounded-md"
+                                        src="/assets/ecommerce/imgs/5.webp"
+                                        width={762}
+                                        height={1105}
+                                        placeholder="blur"
+                                        blurDataURL="/assets/ecommerce/imgs/5.webp"
+                                        alt=""
+                                    />
+                                </div>
                             </div>
 
-                            <div className="flex justify-center items-center w-full h-auto">
-                                <Image className="flex justify-center items-center w-full h-auto rounded-md"
-                                    src="/assets/ecommerce/imgs/7.webp"
-                                    width={762}
-                                    height={618}
-                                    placeholder="blur"
-                                    blurDataURL="/assets/ecommerce/imgs/7.webp"
-                                    alt=""
-                                />
+                            <div className="block justify-center items-center w-full h-full mt-44 space-y-6">
+                                <div className="flex justify-center items-center w-full h-auto">
+                                    <Image className="flex justify-center items-center w-full min-w-[16rem] h-auto rounded-md"
+                                        src="/assets/ecommerce/imgs/6.webp"
+                                        width={762}
+                                        height={1369}
+                                        placeholder="blur"
+                                        blurDataURL="/assets/ecommerce/imgs/6.webp"
+                                        alt=""
+                                    />
+                                </div>
+
+                                <div className="flex justify-center items-center w-full h-auto">
+                                    <Image className="flex justify-center items-center w-full min-w-[16rem] h-auto rounded-md"
+                                        src="/assets/ecommerce/imgs/7.webp"
+                                        width={762}
+                                        height={618}
+                                        placeholder="blur"
+                                        blurDataURL="/assets/ecommerce/imgs/7.webp"
+                                        alt=""
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

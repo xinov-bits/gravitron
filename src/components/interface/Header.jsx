@@ -48,10 +48,10 @@ const Header = () => {
       'name': 'build a website',
       'lists': [
         {
-          'name': 'CMS',
+          'name': 'CRM',
           'desc': 'Flexible content management',
-          'icon': 'cms',
-          'link': '/',
+          'icon': 'crm',
+          'link': '/crm',
         },
         {
           'name': 'Ecommerce',
