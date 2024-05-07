@@ -65,8 +65,8 @@ const page = () => {
     return (
         <>
             <div className="block items-start w-full h-full min-h-screen mt-14 bg-[--black-1100]">
-                <div className="flex justify-between items-center w-full h-[37rem] f-dmsans">
-                    <div className="flex flex-col justify-center items-center w-[48vw] h-full px-8 sm:px-8 md:px-12 lg:px-12 xl:px-12">
+                <div className="block sm:block md:flex lg:flex xl:flex justify-between items-center w-full h-[37rem] f-dmsans">
+                    <div className="flex flex-col justify-center items-center w-full sm:w-full md:w-[48vw] lg:w-[48vw] xl:w-[48vw] h-full px-8 sm:px-8 md:px-12 lg:px-12 xl:px-12">
                         <div className="block items-center w-full text-5xl font-bold text-[--white-100]">
                             <span className="flex justify-start items-center w-auto text-5xl !text-[2.45rem] font-semibold gradient gradient-codespaces">
                                 Ecommerce
@@ -98,7 +98,7 @@ const page = () => {
                         </Link>
                     </div>
 
-                    <div className="relative flex items-center w-[52vw] h-full space-x-4 overflow-hidden">
+                    <div className="relative flex items-center w-full sm:w-full md:w-[52vw] lg:w-[52vw] xl:w-[52vw] h-full space-x-4 overflow-hidden">
                         <div className="block justify-center items-center w-[14rem] h-full mt-64 space-y-4">
                             <div className="flex justify-center items-center w-full h-auto">
                                 <Image className="flex justify-center items-center w-full h-auto rounded-md"
@@ -185,10 +185,10 @@ const page = () => {
                 </div>
 
                 <div className="relative block items-start w-full h-full bg-[--white-100] text-[--black-1100]" id="main">
-                    <div className="block items-center w-full p-10">
+                    <div className="block items-center w-full p-6 sm:p-6 md:p-10 lg:p-10 xl:p-10">
                         <div className="block items-center w-full">
-                            <div className="flex justify-start items-center w-full space-x-2 text-6xl leading-none font-extrabold">
-                                <Image className="flex justify-center items-center size-12"
+                            <div className="flex justify-start items-center w-full space-x-2 text-5xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl leading-none font-extrabold">
+                                <Image className="flex justify-center items-center size-10 sm:size-10 md:size-12 lg:size-12 xl:size-12"
                                     src="/assets/ecommerce/design.svg"
                                     width={400}
                                     height={400}
@@ -200,7 +200,7 @@ const page = () => {
                                 </div>
                             </div>
 
-                            <div className="flex justify-start items-center w-full text-3xl font-medium tracking-tight">
+                            <div className="flex justify-start items-center w-full text-xl sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl font-medium tracking-tight">
                                 your store, your way &mdash; effortlessly
                             </div>
                         </div>
@@ -208,7 +208,7 @@ const page = () => {
                         <div className="relative flex justify-center items-center w-full mt-10">
                             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-start w-full border-[1.5px] border-[--white-400]" id="ecommerce_sec2">
                                 {designArr.map((k, index) => (
-                                    <div key={index} className="relative block items-center w-full h-full p-6" id="ecommerce_sec2-child">
+                                    <div key={index} className="relative block items-center w-full h-full p-6 last:border-t-[1.5px] sm:last:border-t-[1.5px] md:last:border-t-0 lg:last:border-t-0 xl:last:border-t-0 after:hidden sm:after:hidden md:after:block lg:after:block xl:after:block before:hidden sm:before:hidden md:before:block lg:before:block xl:before:block" id="ecommerce_sec2-child">
                                         <div className="flex justify-start items-center w-full text-4xl leading-none font-semibold">
                                             {k.name}
                                         </div>
@@ -238,10 +238,10 @@ const page = () => {
                     </div>
 
 
-                    <div className="block items-center w-full p-10">
+                    <div className="block items-center w-full p-6 sm:p-6 md:p-10 lg:p-10 xl:p-10">
                         <div className="block items-center w-full">
-                            <div className="flex justify-start items-center w-full space-x-2 text-6xl leading-none font-extrabold">
-                                <Image className="flex justify-center items-center size-12"
+                            <div className="flex justify-start items-center w-full space-x-2 text-5xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl leading-none font-extrabold">
+                                <Image className="flex justify-center items-center size-10 sm:size-10 md:size-12 lg:size-12 xl:size-12"
                                     src="/assets/ecommerce/grow.svg"
                                     width={400}
                                     height={400}
@@ -253,7 +253,7 @@ const page = () => {
                                 </div>
                             </div>
 
-                            <div className="flex justify-start items-center w-full text-3xl font-medium tracking-tight">
+                            <div className="flex justify-start items-center w-full text-xl sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl font-medium tracking-tight">
                                 your business
                             </div>
                         </div>
@@ -261,7 +261,7 @@ const page = () => {
                         <div className="relative flex justify-center items-center w-full mt-10">
                             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-start w-full border-[1.5px] border-[--white-400]" id="ecommerce_sec2">
                                 {growArr.map((k, index) => (
-                                    <div key={index} className="relative block items-center w-full h-full p-6" id="ecommerce_sec2-child">
+                                    <div key={index} className="relative block items-center w-full h-full p-6 last:border-t-[1.5px] sm:last:border-t-[1.5px] md:last:border-t-0 lg:last:border-t-0 xl:last:border-t-0 after:hidden sm:after:hidden md:after:block lg:after:block xl:after:block before:hidden sm:before:hidden md:before:block lg:before:block xl:before:block" id="ecommerce_sec2-child">
                                         <div className="flex justify-start items-center w-full text-4xl leading-none font-semibold">
                                             {k.name}
                                         </div>
