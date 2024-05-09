@@ -163,7 +163,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="z-[900] absolute top-0 hidden sm:hidden md:flex lg:flex xl:flex justify-between items-center w-full h-14 px-2 text-[--white-100] bg-none select-none x_shadow-c-sub-nav">
+      <header className="z-[900] fixed top-0 hidden sm:hidden md:flex lg:flex xl:flex justify-between items-center w-full h-14 px-2 text-[--white-100] bg-[#06080b]/60 backdrop-blur select-none x_shadow-c-sub-nav">
         <div className="flex justify-center items-center w-[12%] h-auto text-xl font-bold select-none cursor-pointer">
           <Link href="/">
             <div className="flex justify-center items-center size-auto">

@@ -8,6 +8,7 @@ import Button from '@/components/segments/Button';
 // UI
 import { useScroll, useTransform } from "framer-motion";
 import { GoogleGeminiEffect } from "@/components/interface/google-gemini-effect";
+import { BackgroundBeams } from '@/components/interface/beams-effect';
 
 // COMPONENTS
 import Solutions from '@/components/layout/Solutions';
@@ -23,7 +24,7 @@ export default function Home() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ["end start", "end start"],
   });
 
   const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
@@ -39,7 +40,7 @@ export default function Home() {
 
         <div className="flex flex-col justify-center items-center w-full h-full text-white bg-[--black-1100]">
           <div
-            className="z-[50] w-full relative"
+            className="z-[50] hidden sm:hidden md:block lg:block xl:block w-full relative"
             ref={ref}
           >
             <GoogleGeminiEffect
@@ -51,6 +52,10 @@ export default function Home() {
                 pathLengthFifth,
               ]}
             />
+          </div>
+
+          <div className="z-[50] block sm:block md:hidden lg:hidden xl:hidden w-full relative">
+            <BackgroundBeams />
           </div>
 
 
