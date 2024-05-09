@@ -325,7 +325,7 @@ const Solutions = () => {
                             glarePosition='all'
                             glareColor='#ffd33d'
                         >
-                            <div className="z-[10] group relative flex justify-center items-center w-full h-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-md overflow-hidden cursor-pointer">
+                            <div className="group relative flex justify-center items-center w-full h-full bg-gradient-to-t from-[--black-1000] to-[--black-900] border border-[--black-600] rounded-md overflow-hidden cursor-pointer">
                                 <div className="z-[1] block items-start w-full h-full p-6 sm:p-6 md:p-8 lg:p-8 xl:p-8">
                                     <div className="flex justify-start items-center w-max px-2.5 py-2 space-x-1 leading-none text-sm text-[#ffd33d] border border-[#ffd33d] rounded-full select-none" id="sec2_chip1">
                                         <SwatchIcon className="flex justify-center items-center size-3.5" />

@@ -210,7 +210,7 @@ img {
   filter: blur(5rem);
   opacity: 0.65;
   mix-blend-mode: screen;
-  animation: gradientOpacityBlur 3500ms linear infinite;
+  /* animation: gradientOpacityBlur 3500ms linear infinite; */
 }
 .hero-gradient span:nth-child(1) {
   z-index: 0;
