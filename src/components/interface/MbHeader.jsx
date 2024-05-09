@@ -122,7 +122,7 @@ const Header = () => {
                                     <Link href="/ecommerce" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
                                         Ecommerce
                                     </Link>
-                                    <Link href="/" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
+                                    <Link href="/blog" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
                                         Blog
                                     </Link>
                                     <Link href="/" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
