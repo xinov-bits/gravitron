@@ -11,7 +11,7 @@ import Button from '@/components/segments/Button';
 
 
 const page = () => {
-
+    
     const crmArr = [
         {
             'name': 'Tailor Seamless Customer Journeys',
@@ -45,11 +45,11 @@ const page = () => {
                     <div className="flex flex-col justify-center items-center w-full sm:w-full md:w-[50vw] lg:w-[50vw] xl:w-[50vw] h-full px-8 sm:px-8 md:px-12 lg:px-12 xl:px-12">
                         <div className="block items-center w-full text-5xl font-bold text-[--white-100]">
                             <span className="flex justify-start items-center w-auto text-5xl !text-[2.45rem] font-semibold gradient gradient-codespaces">
-                                CRM
+                                Blog
                             </span>
 
                             <span className="flex justify-start items-center w-auto mt-2">
-                                Client Relations Optimization and Integration Suite
+                                Share your notion worldwide
                             </span>
                         </div>
 

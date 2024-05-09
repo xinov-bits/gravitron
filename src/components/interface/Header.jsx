@@ -49,7 +49,7 @@ const Header = () => {
       'lists': [
         {
           'name': 'CRM',
-          'desc': 'Flexible content management',
+          'desc': 'Flexible customer management',
           'icon': 'crm',
           'link': '/crm',
         },
@@ -63,7 +63,7 @@ const Header = () => {
           'name': 'Blog',
           'desc': 'Elucidate your ideas and thoughts to the world',
           'icon': 'blog',
-          'link': '/',
+          'link': '/blog',
         },
         {
           'name': 'Education',
