@@ -49,7 +49,7 @@ const page = () => {
                             </span>
 
                             <span className="flex justify-start items-center w-auto mt-2">
-                                Client Relations Optimization and Integration Suite
+                                Client Relations Optimization Suite
                             </span>
                         </div>
 
