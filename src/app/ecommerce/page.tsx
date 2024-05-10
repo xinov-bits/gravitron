@@ -65,7 +65,7 @@ const page = () => {
     return (
         <>
             <div className="block items-start w-full h-full min-h-screen mt-14 bg-[--black-1100]">
-                <div className="block sm:block md:flex lg:flex xl:flex justify-between items-center w-full h-[37rem] f-dmsans">
+                <div className="block sm:block md:flex lg:flex xl:flex justify-between items-center w-full h-auto min-h-[37rem] f-dmsans">
                     <div className="flex flex-col justify-center items-center w-full sm:w-full md:w-[48vw] lg:w-[48vw] xl:w-[48vw] h-full px-8 sm:px-8 md:px-12 lg:px-12 xl:px-12">
                         <div className="block items-center w-full text-5xl font-bold text-[--white-100]">
                             <span className="flex justify-start items-center w-auto text-5xl !text-[2.45rem] font-semibold gradient gradient-codespaces">
