@@ -219,7 +219,7 @@ const page = () => {
                                             {k.desc}
                                         </div>
 
-                                        <div className="flex justify-center items-end w-full h-auto p-0 sm:p-0 md:p-6 lg:p-6 xl:p-6 overflow-hidden">
+                                        <div className="flex justify-center items-end w-full h-auto pt-6 p-0 sm:p-0 md:p-6 lg:p-6 xl:p-6 overflow-hidden">
                                             {k.img !== '' ? (
                                                 <Image className="flex justify-center items-center w-auto border border-[--white-400] rounded-none sm:rounded-none md:rounded-md lg:rounded-md xl:rounded-md overflow-hidden"
                                                     src={k.img}
@@ -272,7 +272,7 @@ const page = () => {
                                             {k.desc}
                                         </div>
 
-                                        <div className="flex justify-center items-end w-full h-auto p-0 sm:p-0 md:p-6 lg:p-6 xl:p-6 overflow-hidden">
+                                        <div className="flex justify-center items-end w-full h-auto pt-6 p-0 sm:p-0 md:p-6 lg:p-6 xl:p-6 overflow-hidden">
                                             <Image className="flex justify-center items-center w-auto border-0 sm:border-0 md:border lg:border xl:border border-[--white-400] rounded-none sm:rounded-none md:rounded-md lg:rounded-md xl:rounded-md overflow-hidden"
                                                 src={k.img}
                                                 width={1080}
