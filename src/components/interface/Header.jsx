@@ -250,7 +250,7 @@ const Header = () => {
       <AnimatePresence>
         {(menuOpen && menuShow !== '') && (
           <motion.div
-            className={`absolute z-[500] top-14 flex flex-wrap justify-start items-start w-full h-auto p-6 gap-x-6 gap-y-10 bg-[--white-100] ${menuOpen ? 'scale-y-100 pointer-events-auto' : 'scale-y-0 pointer-events-none'} origin-top overflow-y-hidden duration-0`}
+            className={`fixed z-[500] top-14 flex flex-wrap justify-start items-start w-full h-auto p-6 gap-x-6 gap-y-10 bg-[--white-100] ${menuOpen ? 'scale-y-100 pointer-events-auto' : 'scale-y-0 pointer-events-none'} origin-top overflow-y-hidden duration-0`}
             initial={{ scaleY: 0, pointerEvents: "none" }}
             animate={{ scaleY: 1, pointerEvents: "auto" }}
             // exit={{ scaleY: 0, pointerEvents: "none" }}

@@ -16,7 +16,7 @@ const page = () => {
         {
             'name': 'Tailor Seamless Customer Journeys',
             'desc': 'Create pixel-perfect, branded purchase flows for your customers.',
-            'img': '/assets/ecommerce/trs/3.png',
+            'img': '/assets/ecommerce/imgs/8.png',
         },
         {
             'name': 'Craft custom interactions and animations',
