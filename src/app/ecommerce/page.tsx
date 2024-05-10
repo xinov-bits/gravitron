@@ -65,7 +65,7 @@ const page = () => {
     return (
         <>
             <div className="block items-start w-full h-full min-h-screen mt-14 bg-[--black-1100]">
-                <div className="block sm:block md:flex lg:flex xl:flex justify-between items-center w-full h-auto min-h-[37rem] f-dmsans">
+                <div className="block sm:block md:flex lg:flex xl:flex justify-between items-center w-full h-[37rem] f-dmsans">
                     <div className="flex flex-col justify-center items-center w-full sm:w-full md:w-[48vw] lg:w-[48vw] xl:w-[48vw] h-full px-8 sm:px-8 md:px-12 lg:px-12 xl:px-12">
                         <div className="block items-center w-full text-5xl font-bold text-[--white-100]">
                             <span className="flex justify-start items-center w-auto text-5xl !text-[2.45rem] font-semibold gradient gradient-codespaces">
@@ -210,25 +210,25 @@ const page = () => {
                         <div className="relative flex justify-center items-center w-full mt-10">
                             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-start w-full border-[1.5px] border-[--white-400]" id="ecommerce_sec2">
                                 {designArr.map((k, index) => (
-                                    <div key={index} className="relative block items-center w-full h-full p-6 last:border-t-[1.5px] sm:last:border-t-[1.5px] md:last:border-t-0 lg:last:border-t-0 xl:last:border-t-0 after:hidden sm:after:hidden md:after:block lg:after:block xl:after:block before:hidden sm:before:hidden md:before:block lg:before:block xl:before:block" id="ecommerce_sec2-child">
-                                        <div className="flex justify-start items-center w-full text-3xl leading-none font-semibold">
+                                    <div key={index} className="relative block items-center w-full h-full last:border-t-[1.5px] sm:last:border-t-[1.5px] md:last:border-t-0 lg:last:border-t-0 xl:last:border-t-0 after:hidden sm:after:hidden md:after:block lg:after:block xl:after:block before:hidden sm:before:hidden md:before:block lg:before:block xl:before:block" id="ecommerce_sec2-child">
+                                        <div className="flex justify-start items-center w-full px-6 pt-6 text-3xl leading-none font-semibold">
                                             {k.name}
                                         </div>
 
-                                        <div className="flex justify-start items-center w-full mt-2 text-lg font-normal tracking-tight leading-tight">
+                                        <div className="flex justify-start items-center w-full px-6 mt-2 text-lg font-normal tracking-tight leading-tight">
                                             {k.desc}
                                         </div>
 
-                                        <div className="flex justify-center items-end w-full h-auto mt-6 rounded-md overflow-hidden">
+                                        <div className="flex justify-center items-end w-full h-auto p-0 sm:p-0 md:p-6 lg:p-6 xl:p-6 overflow-hidden">
                                             {k.img !== '' ? (
-                                                <Image className="flex justify-center items-center w-auto rounded-md overflow-hidden"
+                                                <Image className="flex justify-center items-center w-auto border border-[--white-400] rounded-none sm:rounded-none md:rounded-md lg:rounded-md xl:rounded-md overflow-hidden"
                                                     src={k.img}
                                                     width={1080}
                                                     height={675}
                                                     alt={k.name}
                                                 />
                                             ) : (
-                                                <video className="w-full h-full rounded-md overflow-hidden" autoPlay loop muted>
+                                                <video className="w-full h-full border border-[--white-400] rounded-none sm:rounded-none md:rounded-md lg:rounded-md xl:rounded-md overflow-hidden" autoPlay loop muted>
                                                     <source src={k.video} type="video/mp4" />
                                                 </video>
                                             )}
@@ -263,17 +263,17 @@ const page = () => {
                         <div className="relative flex justify-center items-center w-full mt-10">
                             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-start w-full border-[1.5px] border-[--white-400]" id="ecommerce_sec2">
                                 {growArr.map((k, index) => (
-                                    <div key={index} className="relative block items-center w-full h-full p-6 last:border-t-[1.5px] sm:last:border-t-[1.5px] md:last:border-t-0 lg:last:border-t-0 xl:last:border-t-0 after:hidden sm:after:hidden md:after:block lg:after:block xl:after:block before:hidden sm:before:hidden md:before:block lg:before:block xl:before:block" id="ecommerce_sec2-child">
-                                        <div className="flex justify-start items-center w-full text-3xl leading-none font-semibold">
+                                    <div key={index} className="relative block items-center w-full h-full last:border-t-[1.5px] sm:last:border-t-[1.5px] md:last:border-t-0 lg:last:border-t-0 xl:last:border-t-0 after:hidden sm:after:hidden md:after:block lg:after:block xl:after:block before:hidden sm:before:hidden md:before:block lg:before:block xl:before:block" id="ecommerce_sec2-child">
+                                        <div className="flex justify-start items-center w-full px-6 pt-6 text-3xl leading-none font-semibold">
                                             {k.name}
                                         </div>
 
-                                        <div className="flex justify-start items-center w-full mt-2 text-lg font-normal tracking-tight leading-tight">
+                                        <div className="flex justify-start items-center w-full px-6 mt-2 text-lg font-normal tracking-tight leading-tight">
                                             {k.desc}
                                         </div>
 
-                                        <div className="flex justify-center items-end w-full h-auto mt-6 rounded-md overflow-hidden">
-                                            <Image className="flex justify-center items-center w-auto rounded-md overflow-hidden"
+                                        <div className="flex justify-center items-end w-full h-auto p-0 sm:p-0 md:p-6 lg:p-6 xl:p-6 overflow-hidden">
+                                            <Image className="flex justify-center items-center w-auto border-0 sm:border-0 md:border lg:border xl:border border-[--white-400] rounded-none sm:rounded-none md:rounded-md lg:rounded-md xl:rounded-md overflow-hidden"
                                                 src={k.img}
                                                 width={1080}
                                                 height={675}

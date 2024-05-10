@@ -127,7 +127,7 @@ const Button: React.FC<ButtonProps> = ({ children, type, width, height, round, i
 
             {type === 'white-outlined' && (
                 <button className={`
-                    z-[1] select-none group flex justify-center items-center ${width} ${height} min-w-12 min-h-8 bg-none border-[1.25px] border-[--white-100] hover:border-[--white-200] focus:border-[--white-200] text-[--white-100] hover:text-[--white-200] focus:text-[--white-200] ${round} text-white hover:opacity-75 backdrop-blur-[8px] f-dmsans
+                    z-[1] select-none group flex justify-center items-center ${width} ${height} min-w-12 min-h-8 bg-none border-[1.25px] border-[--white-100] hover:border-[--white-200] focus:border-[--white-200] text-[--white-100] hover:text-[--white-200] focus:text-[--white-200] ${round} text-white hover:opacity-75 hover:backdrop-blur-lg backdrop-blur-[8px] f-dmsans
                 `}>
                     <div className={`${icon && 'mr-1'}`}> {children} </div>
 
