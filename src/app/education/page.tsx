@@ -12,7 +12,7 @@ import Button from '@/components/segments/Button';
 
 const page = () => {
 
-    const crmArr = [
+    const blogArr = [
         {
             'name': 'Tailor Seamless Customer Journeys',
             'desc': 'Create pixel-perfect, branded purchase flows for your customers.',
@@ -44,17 +44,17 @@ const page = () => {
                 <div className="block sm:block md:flex lg:flex xl:flex justify-between items-center w-full h-[37rem] f-dmsans">
                     <div className="flex flex-col justify-center items-center w-full sm:w-full md:w-[50vw] lg:w-[50vw] xl:w-[50vw] h-full px-8 sm:px-8 md:px-12 lg:px-12 xl:px-12">
                         <div className="block items-center w-full text-5xl font-bold text-[--white-100]">
-                            <span className="flex justify-start items-center w-auto text-5xl !text-[2.45rem] font-medium gradient gradient-yellow">
-                                CRM
+                            <span className="flex justify-start items-center w-auto text-5xl !text-[2.45rem] font-medium gradient gradient-green">
+                                Education
                             </span>
 
                             <span className="flex justify-start items-center w-auto mt-2">
-                                Client Relations Optimization Suite
+                                Manage your institution or school online
                             </span>
                         </div>
 
                         <div className="block items-center w-full mt-4 text-base !text-[1.15rem] leading-snug font-medium text-[--fgColor-muted-100]">
-                            Unlock the full potential of your client relations with our comprehensive suite offering optimization, integration, and seamless management of your valuable data assets.
+                            Get ready to revolutionize online learning with our tailored platforms. Enjoy personalized courses, smooth integration, and stress-free management &ndash; all made just for you.
                         </div>
 
                         <div className="block items-center w-full mt-6">
@@ -70,7 +70,7 @@ const page = () => {
                         </div>
 
                         <Link href="#main" className="block items-center w-full mt-12 text-sm text-[--fgColor-muted-100] hover:text-[--white-100]">
-                            ↓&nbsp;&nbsp;LEARN MORE ABOUT THE CRM
+                            ↓&nbsp;&nbsp;LEARN MORE ABOUT THE EDUCATION
                         </Link>
                     </div>
 
@@ -78,11 +78,11 @@ const page = () => {
                         <div className="absolute -right-[1rem] block justify-center items-center w-full h-full">
                             <div className="flex justify-center items-center w-full h-full">
                                 <Image className="flex justify-center items-center w-full h-auto rounded-md"
-                                    src="/assets/crm/imgs/dashboard.png"
+                                    src="/assets/education/imgs/1.png"
                                     width={1255}
                                     height={1061}
                                     placeholder="blur"
-                                    blurDataURL="/assets/crm/imgs/dashboard.png"
+                                    blurDataURL="/assets/education/imgs/1.png"
                                     alt=""
                                 />
                             </div>
@@ -96,25 +96,25 @@ const page = () => {
                         <div className="block items-center w-full">
                             <div className="flex justify-start items-center w-full space-x-2 text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl leading-none font-extrabold">
                                 <Image className="flex justify-center items-center size-8 sm:size-8 md:size-8 lg:size-10 xl:size-10"
-                                    src="/assets/crm/link.svg"
+                                    src="/assets/education/icon1.svg"
                                     width={400}
                                     height={400}
                                     alt=""
                                 />
 
                                 <div>
-                                    Connect. Grow. Succeed.
+                                    Integrate Your Courses
                                 </div>
                             </div>
 
                             <div className="flex justify-start items-center w-full text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl font-medium tracking-tight">
-                                for your company, as you wish
+                                to meet the needs of your students
                             </div>
                         </div>
 
                         <div className="relative flex justify-center items-center w-full mt-10">
                             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-start w-full border-[1.5px] border-[--white-400]" id="ecommerce_sec2">
-                                {crmArr.map((k, index) => (
+                                {blogArr.map((k, index) => (
                                     <div key={index} className="relative block items-center w-full h-full last:border-t-[1.5px] sm:last:border-t-[1.5px] md:last:border-t-0 lg:last:border-t-0 xl:last:border-t-0 after:hidden sm:after:hidden md:after:block lg:after:block xl:after:block before:hidden sm:before:hidden md:before:block lg:before:block xl:before:block" id="ecommerce_sec2-child">
                                         <div className="flex justify-start items-center w-full px-6 pt-6 text-3xl leading-none font-semibold">
                                             {k.name}

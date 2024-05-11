@@ -188,6 +188,24 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+.gradient.gradient-green {
+  color: var(--fgColor-done, var(--color-done-fg));
+  background: linear-gradient(90deg, #57fe6f 0%, #3cc150 30%),
+    #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient.gradient-yellow {
+  color: var(--fgColor-done, var(--color-done-fg));
+  background: linear-gradient(90deg, #ebc93f 0%, #f8ac61 30%),
+    #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* HERO SECTION */
 #hero-section {
   position: relative;

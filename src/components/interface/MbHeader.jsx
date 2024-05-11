@@ -125,70 +125,9 @@ const Header = () => {
                                     <Link href="/blog" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
                                         Blog
                                     </Link>
-                                    <Link href="/" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
+                                    <Link href="/education" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
                                         Education
                                     </Link>
-                                    <Link href="/" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
-                                        Interactions
-                                    </Link>
-                                    <Link href="/" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
-                                        Localization
-                                    </Link>
-                                </motion.div>
-                            )}
-
-
-                            <label className="flex justify-between items-center w-full h-12 px-4 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" htmlFor="solutions2">
-                                <input className="hidden"
-                                    type="radio"
-                                    name="menu2"
-                                    value="solutions2"
-                                    id="solutions2"
-                                    onChange={(e) => {
-                                        setMenuShow('');
-
-                                        setTimeout(() => {
-                                            setMenuShow(e.target.value)
-                                        }, 300);
-                                    }}
-                                    onClick={() => menuOpen && (setMenuShow(''))}
-                                    checked={menuShow === 'solutions2'}
-                                />
-
-                                <div className="flex justify-start items-center w-max">
-                                    <LightBulbIcon className="size-5 mr-2" />
-
-                                    Solutions
-                                </div>
-
-                                <ChevronDownIcon className={`size-5 ${menuShow === 'solutions2' ? 'rotate-0' : '-rotate-90'} duration-75`} />
-                            </label>
-
-                            {menuShow === 'solutions2' && (
-                                <motion.div
-                                    className="block items-start w-full text-base"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    exit={{ opacity: 0 }}
-                                >
-                                    <li className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
-                                        Freelancers
-                                    </li>
-                                    <li className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
-                                        Agencies
-                                    </li>
-                                    <li className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
-                                        Startups
-                                    </li>
-                                    <li className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
-                                        Enterprise
-                                    </li>
-                                    <li className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
-                                        Global alliances
-                                    </li>
-                                    <li className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
-                                        UI/UX Design
-                                    </li>
                                 </motion.div>
                             )}
 

@@ -12,58 +12,92 @@ const Header = () => {
         {
             'name': 'PRODUCT',
             'items': [
-                'Platform',
-                'Designer',
-                'CMS',
-                'Interactions',
-                'Localization',
-                'Hosting',
-                'SEO',
-                'Security',
-                'Ecommerce',
+                {
+                    'name': 'CRM',
+                    'url': '/crm'
+                },
+                {
+                    'name': 'Ecommerce',
+                    'url': '/ecommerce'
+                },
+                {
+                    'name': 'Blog',
+                    'url': '/blog'
+                },
+                {
+                    'name': 'Education',
+                    'url': '/education'
+                },
+                {
+                    'name': 'SEO',
+                    'url': '/seo'
+                },
+                {
+                    'name': 'Hosting',
+                    'url': '/hosting'
+                },
             ]
         },
         {
             'name': 'COMPANY',
             'items': [
+                {
+                    'name': 'About',
+                    'url': '/about'
+                },
+                {
+                    'name': 'Terms of Service',
+                    'url': '/terms-of-service'
+                },
+                {
+                    'name': 'Privacy policy',
+                    'url': '/privacy-policy'
+                },
                 'About',
-                'Accessibility statement',
                 'Terms of Service',
                 'Privacy policy',
-                'Cookie policy',
-                'Cookie preferences',
-                'Sitemap',
-            ]
-        },
-        {
-            'name': 'EXPLORE',
-            'items': [
-                'Marketplace',
-                'Libraries',
-                'Apps',
-                'Hire an Expert',
-                'Templates',
             ]
         },
         {
             'name': 'SOLUTIONS',
             'items': [
-                'Freelancers',
-                'Agencies',
-                'Enterprise',
-                'Startups',
-                'Classrooms',
-                'Global alliances',
+                {
+                    'name': 'Agencies',
+                    'url': '/agencies'
+                },
+                {
+                    'name': 'Enterprise',
+                    'url': '/enterprise'
+                },
+                {
+                    'name': 'Startups',
+                    'url': '/startups'
+                },
+                {
+                    'name': 'Classrooms',
+                    'url': '/classrooms'
+                },
             ]
         },
         {
             'name': 'GET HELP',
             'items': [
-                'Support',
-                'Pricing',
-                'Status',
-                'Forum',
-                'Wishlist',
+                {
+                    'name': 'Support',
+                    'url': '/support'
+                },
+                {
+                    'name': 'Pricing',
+                    'url': '/pricing'
+                },
+                {
+                    'name': 'Status',
+                    'url': '/status'
+                },
+                {
+                    'name': 'Forum',
+                    'url': '/forum'
+                },
             ]
         },
     ]
@@ -124,10 +158,10 @@ const Header = () => {
                                 {k.name}
                             </li>
 
-                            {(k.items).map((item) => (
-                                <Link key={item} href="/" className="flex justify-start items-center w-max mt-2.5 font-light">
+                            {(k.items).map((item, index) => (
+                                <Link key={index} href={`${item.url}`} className="flex justify-start items-center w-max mt-2.5 font-light">
                                     <li className="flex justify-start items-center w-max text-[--fgColor-muted-300] hover:text-[--white-100]">
-                                        {item}
+                                        {item.name}
                                     </li>
                                 </Link>
                             ))}

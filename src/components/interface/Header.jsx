@@ -69,31 +69,31 @@ const Header = () => {
           'name': 'Education',
           'desc': 'Manage a website for your institute, or students',
           'icon': 'education',
-          'link': '/',
+          'link': '/education',
         },
-        {
-          'name': 'Interactions',
-          'desc': 'Craft immersive experiences',
-          'icon': 'interactions',
-          'link': '/',
-        },
-        {
-          'name': 'Localization',
-          'desc': 'Customize your site for a worldwide audience',
-          'icon': 'localization',
-          'link': '/',
-        },
+        // {
+        //   'name': 'Interactions',
+        //   'desc': 'Craft immersive experiences',
+        //   'icon': 'interactions',
+        //   'link': '/',
+        // },
+        // {
+        //   'name': 'Localization',
+        //   'desc': 'Customize your site for a worldwide audience',
+        //   'icon': 'localization',
+        //   'link': '/',
+        // },
       ]
     },
     {
       'name': 'OPTIMIZE FOR GROWTH',
       'lists': [
-        {
-          'name': 'Edit mode',
-          'desc': 'Custom-built environment for content teammates',
-          'icon': 'edit',
-          'link': '/',
-        },
+        // {
+        //   'name': 'Edit mode',
+        //   'desc': 'Custom-built environment for content teammates',
+        //   'icon': 'edit',
+        //   'link': '/',
+        // },
         {
           'name': 'Domain Management',
           'desc': 'Find the best domains for your brand or company',
@@ -116,49 +116,49 @@ const Header = () => {
     },
   ]
 
-  const solutionsMenu = [
-    {
-      'name': 'GitLabs for',
-      'lists': [
-        {
-          'name': 'Freelancers',
-          'desc': 'Explore how freelancers do more, faster with GitLabs',
-          'icon': 'freelancers',
-          'link': '/',
-        },
-        {
-          'name': 'Agencies',
-          'desc': 'Discover how GitLabs can power your agency\'s growth',
-          'icon': 'agencies',
-          'link': '/',
-        },
-        {
-          'name': 'Startups',
-          'desc': 'Learn how to move faster with GitLabs',
-          'icon': 'startups',
-          'link': '/',
-        },
-        {
-          'name': 'Enterprise',
-          'desc': 'Learn how world-class organizations build faster with GitLabs',
-          'icon': 'enterprise',
-          'link': '/',
-        },
-        {
-          'name': 'Global alliances',
-          'desc': 'Learn about becoming a global alliance partner',
-          'icon': 'global_alliances',
-          'link': '/',
-        },
-        {
-          'name': 'UI/UX Design',
-          'desc': 'Creative control and flexibility without code',
-          'icon': 'cursor',
-          'link': '/',
-        },
-      ]
-    },
-  ]
+  // const solutionsMenu = [
+  //   {
+  //     'name': 'GitLabs for',
+  //     'lists': [
+  //       {
+  //         'name': 'Freelancers',
+  //         'desc': 'Explore how freelancers do more, faster with GitLabs',
+  //         'icon': 'freelancers',
+  //         'link': '/',
+  //       },
+  //       {
+  //         'name': 'Agencies',
+  //         'desc': 'Discover how GitLabs can power your agency\'s growth',
+  //         'icon': 'agencies',
+  //         'link': '/',
+  //       },
+  //       {
+  //         'name': 'Startups',
+  //         'desc': 'Learn how to move faster with GitLabs',
+  //         'icon': 'startups',
+  //         'link': '/',
+  //       },
+  //       {
+  //         'name': 'Enterprise',
+  //         'desc': 'Learn how world-class organizations build faster with GitLabs',
+  //         'icon': 'enterprise',
+  //         'link': '/',
+  //       },
+  //       {
+  //         'name': 'Global alliances',
+  //         'desc': 'Learn about becoming a global alliance partner',
+  //         'icon': 'global_alliances',
+  //         'link': '/',
+  //       },
+  //       {
+  //         'name': 'UI/UX Design',
+  //         'desc': 'Creative control and flexibility without code',
+  //         'icon': 'cursor',
+  //         'link': '/',
+  //       },
+  //     ]
+  //   },
+  // ]
 
 
   return (
@@ -200,7 +200,7 @@ const Header = () => {
               <ChevronDownIcon className={`size-4 ${menuShow === 'product' && '-scale-y-100'} duration-75`} />
             </label>
 
-            <label className="relative flex justify-center items-center w-max px-3 h-full text-[--fgColor-muted-100] hover:text-[--white-100] after:content-[''] after:absolute after:bottom-0 after:w-[80%] hover:after:h-0.5 after:h-0 after:bg-[--primary-400] after:duration-200 duration-200 cursor-pointer" htmlFor="solutions">
+            {/* <label className="relative flex justify-center items-center w-max px-3 h-full text-[--fgColor-muted-100] hover:text-[--white-100] after:content-[''] after:absolute after:bottom-0 after:w-[80%] hover:after:h-0.5 after:h-0 after:bg-[--primary-400] after:duration-200 duration-200 cursor-pointer" htmlFor="solutions">
               <input className="hidden"
                 type="radio"
                 name="menu"
@@ -220,7 +220,7 @@ const Header = () => {
               <div className="mr-1.5">Solutions</div>
 
               <ChevronDownIcon className={`size-4 ${menuShow === 'solutions' && '-scale-y-100'} duration-75`} />
-            </label>
+            </label> */}
 
             <li className="relative flex justify-center items-center w-max px-3 h-full text-[--fgColor-muted-100] hover:text-[--white-100] cursor-pointer">
               <div> Contact </div>
@@ -250,7 +250,7 @@ const Header = () => {
       <AnimatePresence>
         {(menuOpen && menuShow !== '') && (
           <motion.div
-            className={`fixed z-[500] top-14 flex flex-wrap justify-start items-start w-full h-auto p-6 gap-x-6 gap-y-10 bg-[--white-100] ${menuOpen ? 'scale-y-100 pointer-events-auto' : 'scale-y-0 pointer-events-none'} origin-top overflow-y-hidden duration-0`}
+            className={`fixed z-[500] top-14 flex flex-wrap justify-start items-start w-full h-auto p-6 gap-x-6 gap-y-10 bg-[--white-100] shadow-[10px_0px_10px_10px_#06080b10] ${menuOpen ? 'scale-y-100 pointer-events-auto' : 'scale-y-0 pointer-events-none'} origin-top overflow-y-hidden duration-0`}
             initial={{ scaleY: 0, pointerEvents: "none" }}
             animate={{ scaleY: 1, pointerEvents: "auto" }}
             // exit={{ scaleY: 0, pointerEvents: "none" }}
