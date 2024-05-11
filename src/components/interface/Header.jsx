@@ -89,28 +89,22 @@ const Header = () => {
       'name': 'OPTIMIZE FOR GROWTH',
       'lists': [
         // {
-        //   'name': 'Edit mode',
-        //   'desc': 'Custom-built environment for content teammates',
-        //   'icon': 'edit',
-        //   'link': '/',
+        //   'name': 'Domain Management',
+        //   'desc': 'Find the best domains for your brand or company',
+        //   'icon': 'domain',
+        //   'link': '/domain-management',
         // },
-        {
-          'name': 'Domain Management',
-          'desc': 'Find the best domains for your brand or company',
-          'icon': 'domain',
-          'link': '/',
-        },
         {
           'name': 'SEO',
           'desc': 'Fine tuned control, without engineers',
           'icon': 'seo',
-          'link': '/',
+          'link': '/seo',
         },
         {
           'name': 'Hosting',
           'desc': 'Fast and reliable hosting for your website',
           'icon': 'hosting',
-          'link': '/',
+          'link': '/hosting',
         },
       ]
     },
@@ -279,7 +273,7 @@ const Header = () => {
                     <div className="flex flex-wrap gap-x-4 gap-y-2 justify-start items-start w-full mt-2">
                       {k.lists.map((item) => (
                         <Link key={item.name} href={item.link} onClick={() => setMenuShow('')}>
-                          <div className="group flex justify-start items-start w-[16rem] h-full px-2 py-3.5 hover:bg-[--white-200] rounded-lg">
+                          <div className="group flex justify-start items-start w-[16rem] h-full px-2 py-3.5 text-[--black-1100] hover:bg-[--white-200] rounded-lg">
                             <div className="flex justify-center items-center size-7 mr-1.5">
                               <svg className="flex justify-center items-center size-7 group-hover:text-[--blue-400]" width={24} height={24}>
                                 <use

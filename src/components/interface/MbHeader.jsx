@@ -70,7 +70,7 @@ const Header = () => {
                                 delay: 0.8,
                             }}
                         >
-                            <li className="flex justify-between items-center w-full h-12 px-4 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
+                            <li className="flex justify-between items-center w-full h-12 px-4 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => setMenuOpen(false)}>
                                 <div className="flex justify-start items-center w-max">
                                     <HomeIcon className="size-5 mr-2" />
 
@@ -116,23 +116,38 @@ const Header = () => {
                                     animate={{ opacity: 1 }}
                                     exit={{ opacity: 0 }}
                                 >
-                                    <Link href="/crm" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
+                                    <Link href="/crm" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => setMenuOpen(false)}>
                                         CRM
                                     </Link>
-                                    <Link href="/ecommerce" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
+
+                                    <Link href="/ecommerce" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => setMenuOpen(false)}>
                                         Ecommerce
                                     </Link>
-                                    <Link href="/blog" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
+
+                                    <Link href="/blog" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => setMenuOpen(false)}>
                                         Blog
                                     </Link>
-                                    <Link href="/education" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
+
+                                    <Link href="/education" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => setMenuOpen(false)}>
                                         Education
+                                    </Link>
+
+                                    <Link href="/blog" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => setMenuOpen(false)}>
+                                        Blog
+                                    </Link>
+
+                                    <Link href="/seo" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => setMenuOpen(false)}>
+                                        SEO
+                                    </Link>
+
+                                    <Link href="/hosting" className="flex justify-start items-center w-full h-10 px-12 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => setMenuOpen(false)}>
+                                        Hosting
                                     </Link>
                                 </motion.div>
                             )}
 
 
-                            <li className="flex justify-between items-center w-full h-12 px-4 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => menuOpen(false)}>
+                            <li className="flex justify-between items-center w-full h-12 px-4 hover:bg-[--black-900] text-[--fgColor-muted-100] hover:text-[--white-100]" onClick={() => setMenuOpen(false)}>
                                 <div className="flex justify-start items-center w-max">
                                     <PhoneIcon className="size-5 mr-2" />
 

@@ -206,6 +206,33 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+.gradient.gradient-fuschia {
+  color: var(--fgColor-done, var(--color-done-fg));
+  background: linear-gradient(90deg, #dc87aa 0%, #ec609a 10%),
+    #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient.gradient-darkblue {
+  color: var(--fgColor-done, var(--color-done-fg));
+  background: linear-gradient(90deg, var(--blue-100) 0%, var(--blue-400) 10%),
+    #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient.gradient-silver {
+  color: var(--fgColor-done, var(--color-done-fg));
+  background: linear-gradient(90deg, var(--white-1000) 0%, var(--black-200) 30%),
+    #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* HERO SECTION */
 #hero-section {
   position: relative;

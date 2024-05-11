@@ -44,7 +44,7 @@ const page = () => {
                 <div className="block sm:block md:flex lg:flex xl:flex justify-between items-center w-full h-[37rem] f-dmsans">
                     <div className="flex flex-col justify-center items-center w-full sm:w-full md:w-[50vw] lg:w-[50vw] xl:w-[50vw] h-full px-8 sm:px-8 md:px-12 lg:px-12 xl:px-12">
                         <div className="block items-center w-full text-5xl font-bold text-[--white-100]">
-                            <span className="flex justify-start items-center w-auto text-5xl !text-[2.45rem] font-medium gradient gradient-yellow">
+                            <span className="flex justify-start items-center w-auto pb-0.5 text-5xl !text-[2.45rem] font-medium gradient gradient-yellow">
                                 CRM
                             </span>
 
@@ -126,7 +126,7 @@ const page = () => {
 
                                         <div className="flex justify-center items-end w-full h-auto pt-6 p-0 sm:p-0 md:p-6 lg:p-6 xl:p-6 overflow-hidden">
                                             {k.img !== '' ? (
-                                                <Image className="flex justify-center items-center w-auto border border-[--white-400] rounded-none sm:rounded-none md:rounded-md lg:rounded-md xl:rounded-md overflow-hidden"
+                                                <Image className="flex justify-center items-center w-auto border border-[--white-400] rounded-none sm:rounded-none md:rounded-md lg:rounded-md xl:rounded-md shadow-md shadow-[#06080b10] overflow-hidden"
                                                     src={k.img}
                                                     width={1080}
                                                     height={675}
